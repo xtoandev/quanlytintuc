@@ -4,8 +4,8 @@ use quanlytintuc;
 
 
 CREATE TABLE quyen(
-  maQuyen bigint NOT NULL PRIMARY KEY auto_increment,
-  tenQuyen VARCHAR(255) NOT NULL
+  maquyen bigint NOT NULL PRIMARY KEY auto_increment,
+  tenquyen VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE taikhoan (
