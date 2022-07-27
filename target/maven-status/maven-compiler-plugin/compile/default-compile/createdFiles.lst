@@ -1,2 +1,15 @@
+com\quanlytintuc\service\IBaiVietService.class
+com\quanlytintuc\dao\impl\ChuDeDAO.class
+com\quanlytintuc\model\Quyen.class
+com\quanlytintuc\dao\IBaiVietDAO.class
+com\quanlytintuc\model\TaiKhoan.class
 com\quanlytintuc\controller\admin\HomeController.class
 com\quanlytintuc\controller\web\HomeController.class
+com\quanlytintuc\dao\IChuDeDAO.class
+com\quanlytintuc\service\IChuDeService.class
+com\quanlytintuc\model\ChiTietChuDe.class
+com\quanlytintuc\model\BaiViet.class
+com\quanlytintuc\service\impl\BaiVietService.class
+com\quanlytintuc\model\BinhLuan.class
+com\quanlytintuc\model\ChuDe.class
+com\quanlytintuc\service\impl\ChuDeService.class

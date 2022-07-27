@@ -1,5 +1,10 @@
 package com.quanlytintuc.dao;
 
-public interface IBaiVietDAO {
+import java.util.List;
 
+import com.quanlytintuc.model.BaiViet;
+
+public interface IBaiVietDAO extends GenericDAO<BaiViet>{
+	List<BaiViet> findAll();
+	List<BaiViet> findByMaChuDe(Long machude);
 }

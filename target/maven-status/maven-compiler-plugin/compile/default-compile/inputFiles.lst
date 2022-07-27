@@ -1,2 +1,15 @@
-E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\controller\admin\HomeController.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\model\ChuDe.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\service\IBaiVietService.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\model\BaiViet.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\service\IChuDeService.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\service\impl\ChuDeService.java
 E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\controller\web\HomeController.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\dao\IBaiVietDAO.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\dao\impl\ChuDeDAO.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\model\TaiKhoan.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\model\Quyen.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\service\impl\BaiVietService.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\dao\IChuDeDAO.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\model\ChiTietChuDe.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\controller\admin\HomeController.java
+E:\eclipse-workspace\quanlytintuc\src\main\java\com\quanlytintuc\model\BinhLuan.java
