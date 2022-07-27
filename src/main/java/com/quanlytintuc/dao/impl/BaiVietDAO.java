@@ -1,10 +1,5 @@
 package com.quanlytintuc.dao.impl;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.List;
 
 import com.quanlytintuc.dao.IBaiVietDAO;
@@ -24,7 +19,7 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 		String sql = "Select * From baiviet";
 		return query(sql ,new BaiVietMapper());
 	}
-
+	/*
 	@Override
 	public Long save(BaiViet baiviet) {	
 		ResultSet resultSet = null;
@@ -76,6 +71,20 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 				return null;
 			}
 		}
+	}*/
+
+	@Override
+	public Long save(BaiViet baiviet) {
+		String sql = "insert into baiviet (tieude ,mataikhoan ,mota ,noidung ,anhnen,ngaydang,trangthai)" + 
+				"values(?,?,?,?,?,?,?) ";
+		return insert(sql,baiviet.getTieuDe()
+						 , baiviet.getMaTaiKhoan()
+						 , baiviet.getMoTa()
+						 , baiviet.getNoiDung()
+						 , baiviet.getAnhNen()
+						 , baiviet.getNgayDang()
+						 , baiviet.getTrangThai());
 	}
 
+	
 }

@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,9 +37,6 @@ public class AbstractDAO<T> implements GenericDAO<T> {
 		try {
 			conn = getConnection();
 			statement = conn.prepareStatement(sql);
-			Object paramenters;
-			Object statment;
-			//set paramenter
 			setParamenter(statement, parameters);
 			resultSet = statement.executeQuery();
 			while (resultSet.next()) {
@@ -67,10 +66,99 @@ public class AbstractDAO<T> implements GenericDAO<T> {
 					statement.setLong(index, (Long) parameter);
 				} else if (parameter instanceof String) {
 					statement.setString(index, (String) parameter);
+				} else if(parameter instanceof Integer) {
+					statement.setInt(index, (Integer) parameter);
+				} else if(parameter instanceof Float) {
+					statement.setFloat(index, (Float) parameter);
+				} else if (parameter instanceof Timestamp) {
+					statement.setTimestamp(index, (Timestamp) parameter);
 				}
+					
 			}
 		}catch (SQLException e) {
 			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void update(String sql, Object... parameters) {
+		// TODO Auto-generated method stub
+		Connection connection = null;
+		PreparedStatement statement = null;
+		
+		try {
+			connection = getConnection();
+			connection.setAutoCommit(false);
+			statement = connection.prepareStatement(sql);
+			setParamenter(statement, parameters);
+			statement.executeUpdate();
+			connection.commit();
+		}catch (SQLException e) {
+			if(connection != null) {
+				try {
+					connection.rollback();
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		}finally {
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+				if (statement != null) {
+					statement.close();
+				}
+			} catch (SQLException e2) {
+				e2.printStackTrace();
+			}
+		}
+		
+	}
+
+	@Override
+	public Long insert(String sql, Object... parameters) {
+		// TODO Auto-generated method stub
+		ResultSet resultSet = null;
+		Long id = null;
+		Connection connection = getConnection();
+		PreparedStatement statement = null;
+		try {
+			connection.setAutoCommit(false);
+			statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+			setParamenter(statement, parameters);
+			statement.executeUpdate();
+			resultSet = statement.getGeneratedKeys();
+			if(resultSet.next()) {
+				id =  resultSet.getLong(1);
+			}
+			connection.commit();
+			return id;
+		} catch (SQLException e) {
+			if(connection != null) {
+				try {
+					connection.rollback();
+				} catch (SQLException e1) {
+					e1.printStackTrace();
+				}
+			}
+			e.printStackTrace();
+			return null;
+		} finally {
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+				if (statement != null) {
+					statement.close();
+				}
+				if (resultSet != null) {
+					resultSet.close();
+				}
+			} catch (SQLException e) {
+				return null;
+			}
 		}
 	}
 		

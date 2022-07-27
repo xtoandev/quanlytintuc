@@ -29,10 +29,10 @@ public class HomeController extends HttpServlet{
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String tieude = "Bài Viết 4";
+		String tieude = "Bài Viết 6";
 		Long mataikhoan = (long) 2;
-		String mota = "mota4";
-		String noidung = "baiviet4";
+		String mota = "mota66";
+		String noidung = "baivie666";
 		String anhnen = "anh";
 		String ngaydang = "2022-07-27";
 		int  trangthai = 1;
