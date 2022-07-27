@@ -6,4 +6,5 @@ import com.quanlytintuc.model.ChuDe;
 
 public interface IChuDeDAO extends GenericDAO<ChuDe> {
 	List<ChuDe> findAll();
+	
 }

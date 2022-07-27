@@ -5,7 +5,6 @@ import java.util.List;
 import javax.inject.Inject;
 
 import com.quanlytintuc.dao.IChuDeDAO;
-import com.quanlytintuc.dao.impl.ChuDeDAO;
 import com.quanlytintuc.model.ChuDe;
 import com.quanlytintuc.service.IChuDeService;
 

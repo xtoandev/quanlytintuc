@@ -9,4 +9,5 @@ import com.quanlytintuc.model.BaiViet;
 public interface IBaiVietService {
 	List<BaiViet> findAll();
 	List<BaiViet> findByMaChuDe(Long machude);
+	BaiViet save(BaiViet baiviet);
 }
