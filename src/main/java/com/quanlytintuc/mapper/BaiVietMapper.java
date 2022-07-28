@@ -2,6 +2,9 @@ package com.quanlytintuc.mapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import com.quanlytintuc.model.BaiViet;
 
@@ -14,14 +17,14 @@ public class BaiVietMapper implements RowMapper<BaiViet>{
 			bv.setMaBaiViet(rs.getLong("mabaiviet"));
 			bv.setTieuDe(rs.getString("tieude"));
 			bv.setMaTaiKhoan(rs.getLong("mataikhoan"));
-			bv.setMoTa("aaa");
-			bv.setNoiDung("sssss");
-			bv.setAnhNen("ss");
-			bv.setHinhAnh("anh");
-			bv.setLinkBaiViet("link");
-			bv.setNgayDang("ngaydang");
-			bv.setLuotXem(2);
-			bv.setTrangThai(1);
+			bv.setMoTa(rs.getString("mota"));
+			bv.setNoiDung(rs.getString("noidung"));
+			bv.setAnhNen(rs.getString("anhnen"));
+			Date ngay = rs.getDate("ngaydang");
+			DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");  
+			String strNgay = dateFormat.format(ngay); 
+			bv.setNgayDang(strNgay);
+			bv.setTrangThai(rs.getInt("trangthai"));
 			return bv;
 		} catch (SQLException e) {
 			e.printStackTrace();

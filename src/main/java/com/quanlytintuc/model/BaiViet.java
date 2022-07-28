@@ -1,36 +1,33 @@
 package com.quanlytintuc.model;
 
-public class BaiViet {
+public class BaiViet extends AbstractModel<BaiViet> {
 	private Long maBaiViet;
 	private String tieuDe;
 	private Long maTaiKhoan;
 	private String moTa;
 	private String noiDung;
 	private String anhNen;
-	private String hinhAnh;
-	private String linkBaiViet;
 	private String ngayDang;
-	private int luotXem;
 	private int  trangThai;
+	
 	
 	public BaiViet() {
 		
 	}
 
 	public BaiViet(Long maBaiViet, String tieuDe, Long maTaiKhoan, String moTa, String noiDung, String anhNen,
-			String hinhAnh, String linkBaiViet, String ngayDang, int luotXem, int trangThai) {
+			 String ngayDang, int trangThai) {
 		this.maBaiViet = maBaiViet;
 		this.tieuDe = tieuDe;
 		this.maTaiKhoan = maTaiKhoan;
 		this.moTa = moTa;
 		this.noiDung = noiDung;
 		this.anhNen = anhNen;
-		this.hinhAnh = hinhAnh;
-		this.linkBaiViet = linkBaiViet;
 		this.ngayDang = ngayDang;
-		this.luotXem = luotXem;
 		this.trangThai = trangThai;
 	}
+
+	
 
 	public Long getMaBaiViet() {
 		return maBaiViet;
@@ -80,21 +77,7 @@ public class BaiViet {
 		this.anhNen = anhNen;
 	}
 
-	public String getHinhAnh() {
-		return hinhAnh;
-	}
-
-	public void setHinhAnh(String hinhAnh) {
-		this.hinhAnh = hinhAnh;
-	}
-
-	public String getLinkBaiViet() {
-		return linkBaiViet;
-	}
-
-	public void setLinkBaiViet(String linkBaiViet) {
-		this.linkBaiViet = linkBaiViet;
-	}
+	
 
 	public String getNgayDang() {
 		return ngayDang;
@@ -104,13 +87,7 @@ public class BaiViet {
 		this.ngayDang = ngayDang;
 	}
 
-	public int getLuotXem() {
-		return luotXem;
-	}
-
-	public void setLuotXem(int luotXem) {
-		this.luotXem = luotXem;
-	}
+	
 
 	public int getTrangThai() {
 		return trangThai;

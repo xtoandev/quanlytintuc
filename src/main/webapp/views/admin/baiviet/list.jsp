@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-   <%@include file="/common/taglib.jsp"%>
+<%@include file="/common/taglib.jsp"%>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,44 +32,34 @@
                         <thead>
                             <tr>
                                 <th>STT</th>
-                                <th>NGÀY GỬI</th>
-                                <th>NGƯỜI GỬI</th>
-                                <th>MÃ PHÒNG MÁY</th>
-                                <th>GHI CHÚ</th>
-                                <th>THAO TÁC</th>
+                                <th>Tiêu Đề</th>
+                                <th>Người Đăng</th>
+                                <th>Mô Tả</th>
+                                <th>Nội Dung</th>
+                                <th>Ảnh Nền</th>
+                                <th>Ngày Đăng</th>
+                                <th>Chủ Đề</th>
+                                <th>Trạng Thái</th>
                             </tr>
                         </thead>
                          
                         <tbody>
-                            <c:if test = "${fn:length(baivietList) == 0}">
+                            <c:if test = "${fn:length(model.listData) == 0}">
                                 <tr><td colspan="6">Chưa có bài viết</td></tr>
                             </c:if>
-                            <c:forEach items="${baivietList}" var="o" varStatus="loop">
+                            <c:forEach items="${model.listData}" var="o" varStatus="loop">
                                 <tr>
                                     <td scope="row">${loop.index + 1}</th>
-                                    <td>${o.ngayGui}</td>
-                                    <td>${taikhoan.tenTK}</td>
-                                    <td>${o.maPhongMay}</td>
-                                    <td>${o.ghiChu}</td>
-                                    <td>
-                                        <form class="col-lg-3" method="post" action="./yeu-cau-phan-mem?action=chi-tiet" target="_blank">
-                                            <input class="hidden" name="maPhieuYC" value="${o.maPhieuYC}"/>
-                                            <button class="btn btn-light px-2 mr-2"><i class="fa fa-eye"></i> Xem Chi Tiết</button> 
-                                        </form>
-                                        <c:set var="maPhieu" value="${o.maPhieuYC}"/>
-
-                                        
-                                        <c:if test="${ck == 0 }">
-                                            <form class="col-lg-2" method="post" action="./yeu-cau-phan-mem?action=sua">
-                                                <input class="hidden" name="maPhieuYC" value="${o.maPhieuYC}"/>
-                                                <button class="btn btn-light px-2 mr-2"><i class="fa fa-edit"></i> Sửa</button> 
-                                            </form>
-                                            <form class="col-lg-2" method="post" action="./yeu-cau-phan-mem?action=xoa">
-                                                <input class="hidden" name="maPhieuYC" value="${o.maPhieuYC}"/>
-                                                <button class="btn btn-danger px-2 mr-2"><i class="fa  fa-trash-o"></i> Xóa</button> 
-                                            </form>
-                                        </c:if>
-                                    </td>
+                                    <td>${o.tieuDe}</td>
+                                    <td>${o.maTaiKhoan}</td>
+                                    <td>${o.moTa}</td>
+                                    <td>${o.noiDung}</td>
+                                    <td>${o.anhNen}</td>
+                                    <td>${o.ngayDang}</td>
+                                    <td>chude</td>
+                                    <td>${o.trangThai}</td>
+                                    
+                                    
                                 </tr>
                             </c:forEach>
                            
