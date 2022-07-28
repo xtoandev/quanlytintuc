@@ -6,6 +6,9 @@ import com.quanlytintuc.model.BaiViet;
 
 public interface IBaiVietDAO extends GenericDAO<BaiViet>{
 	List<BaiViet> findAll();
+	BaiViet findOne(Long mabaiviet);
 	List<BaiViet> findByMaChuDe(Long machude);
 	Long save(BaiViet baiviet);
+	void update(BaiViet baiviet);
+	void delete(long id);
 }
