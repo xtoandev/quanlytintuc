@@ -10,4 +10,6 @@ public interface IBaiVietService {
 	List<BaiViet> findAll();
 	List<BaiViet> findByMaChuDe(Long machude);
 	BaiViet save(BaiViet baiviet);
+	BaiViet update(BaiViet baiviet);
+	void delete(long[] ids);
 }

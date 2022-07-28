@@ -72,7 +72,7 @@ public class AbstractDAO<T> implements GenericDAO<T> {
 					statement.setFloat(index, (Float) parameter);
 				} else if (parameter instanceof Timestamp) {
 					statement.setTimestamp(index, (Timestamp) parameter);
-				}
+				} 
 					
 			}
 		}catch (SQLException e) {
@@ -82,7 +82,7 @@ public class AbstractDAO<T> implements GenericDAO<T> {
 
 	@Override
 	public void update(String sql, Object... parameters) {
-		// TODO Auto-generated method stub
+		
 		Connection connection = null;
 		PreparedStatement statement = null;
 		
@@ -98,7 +98,7 @@ public class AbstractDAO<T> implements GenericDAO<T> {
 				try {
 					connection.rollback();
 				} catch (SQLException e1) {
-					// TODO Auto-generated catch block
+					
 					e1.printStackTrace();
 				}
 			}

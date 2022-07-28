@@ -75,7 +75,7 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 
 	@Override
 	public Long save(BaiViet baiviet) {
-		String sql = "insert into baiviet (tieude ,mataikhoan ,mota ,noidung ,anhnen,ngaydang,trangthai)" + 
+		String sql = "insert into baiviet (tieude ,mataikhoan ,mota ,noidung ,anhnen,ngaydang, trangthai)" + 
 				"values(?,?,?,?,?,?,?) ";
 		return insert(sql,baiviet.getTieuDe()
 						 , baiviet.getMaTaiKhoan()
@@ -84,6 +84,41 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 						 , baiviet.getAnhNen()
 						 , baiviet.getNgayDang()
 						 , baiviet.getTrangThai());
+	}
+
+	@Override
+	public BaiViet findOne(Long mabaiviet) {
+		String sql = "Select * From baiviet where baiviet.mabaiviet = ?";
+		List<BaiViet> bvs = query(sql, new BaiVietMapper(),mabaiviet);
+		return bvs.isEmpty() ? null : bvs.get(0);
+	}
+
+	@Override
+	public void update(BaiViet baiviet) {
+		String sql = "update baiviet SET tieude = ?"
+				+ ", mataikhoan = ?"
+				+ ", mota = ?"
+				+ ", noidung = ?"
+				+ ", anhnen = ?"
+				+ ", hinhanh = ?"
+				+ ", linkbaiviet = ?"
+				+ ", trangthai = ? " + 
+				" WHERE mabaiviet = ? ;";
+		update(sql, baiviet.getTieuDe()
+						 , baiviet.getMaTaiKhoan()
+						 , baiviet.getMoTa()
+						 , baiviet.getNoiDung()
+						 , baiviet.getAnhNen()
+						 , baiviet.getHinhAnh()
+						 , baiviet.getLinkBaiViet()
+						 , baiviet.getTrangThai()
+						 , baiviet.getMaBaiViet());		
+	}
+
+	@Override
+	public void delete(long id) {
+		String sql = "DELETE FROM baiviet WHERE mabaiviet = ?";
+		update(sql,id);
 	}
 
 	

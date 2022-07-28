@@ -1,5 +1,9 @@
 package com.quanlytintuc.service.impl;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -20,16 +24,32 @@ public class BaiVietService implements IBaiVietService {
 
 	@Override
 	public List<BaiViet> findAll() {
-		// TODO Auto-generated method stub
 		return baivietDAO.findAll();
 	}
 
 	@Override
 	public BaiViet save(BaiViet baiviet) {
-		// TODO Auto-generated method stub
+		String dateNow = (java.time.LocalDate.now()).toString();
+		baiviet.setNgayDang(dateNow);
+		baiviet.setLuotXem(0);
 		Long newID = baivietDAO.save(baiviet);
-		System.out.println("them =" + newID);
-		return null;
+		return baivietDAO.findOne(newID);
+	}
+
+	@Override
+	public BaiViet update(BaiViet baiviet) {
+		BaiViet bvCu = baivietDAO.findOne(baiviet.getMaBaiViet());
+		baiviet.setNgayDang(bvCu.getNgayDang());
+		baivietDAO.update(baiviet);
+		return baivietDAO.findOne(baiviet.getMaBaiViet());
+	}
+
+	@Override
+	public void delete(long[] ids) {
+		for(long id : ids) {
+			baivietDAO.delete(id);
+		}
+		
 	}
 
 }

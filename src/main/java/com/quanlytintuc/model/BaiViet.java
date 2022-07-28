@@ -1,6 +1,6 @@
 package com.quanlytintuc.model;
 
-public class BaiViet {
+public class BaiViet extends AbstractModel {
 	private Long maBaiViet;
 	private String tieuDe;
 	private Long maTaiKhoan;
@@ -12,6 +12,7 @@ public class BaiViet {
 	private String ngayDang;
 	private int luotXem;
 	private int  trangThai;
+	
 	
 	public BaiViet() {
 		
@@ -31,6 +32,8 @@ public class BaiViet {
 		this.luotXem = luotXem;
 		this.trangThai = trangThai;
 	}
+
+	
 
 	public Long getMaBaiViet() {
 		return maBaiViet;
@@ -84,8 +87,8 @@ public class BaiViet {
 		return hinhAnh;
 	}
 
-	public void setHinhAnh(String hinhAnh) {
-		this.hinhAnh = hinhAnh;
+	public void setHinhAnh(String hinhAnh) {	
+		this.hinhAnh = hinhAnh ;
 	}
 
 	public String getLinkBaiViet() {
