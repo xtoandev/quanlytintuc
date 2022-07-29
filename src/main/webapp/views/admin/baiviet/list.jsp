@@ -19,12 +19,10 @@
                 Tạo mới <i class="fa fa-plus"></i>
             </a>
         </div>
+        
         <section class="panel">
-
             <header class="panel-heading">
                 <span >Danh sách bài viết </span>
-
-
             </header>
             <div class="panel-body">
                 <section id="unseen">
@@ -49,28 +47,32 @@
                             </c:if>
                             <c:forEach items="${model.listData}" var="o" varStatus="loop">
                                 <tr>
-                                    <td scope="row">${loop.index + 1}</th>
+                                    <td scope="row">${(loop.index + 1) + (model.page - 1)* model.getMaxPageItems() }</th>
                                     <td>${o.tieuDe}</td>
                                     <td>${o.maTaiKhoan}</td>
                                     <td>${o.moTa}</td>
                                     <td>${o.noiDung}</td>
-                                    <td>${o.anhNen}</td>
+                                    <td><img style="max-height: 100px;max-weight: 100px;" src= "<c:url  value='${o.anhNen}'/>" ></td>
                                     <td>${o.ngayDang}</td>
                                     <td>chude</td>
                                     <td>${o.trangThai}</td>
-                                    
-                                    
                                 </tr>
                             </c:forEach>
-                           
                         </tbody>
                     </table>
+                    <form id="formPaging" action="<c:url value='/admin-danhsachbaiviet'/>" method="get" >
+                     	<ul class="pagination" id="pagination"></ul>
+                     	<input type="hidden" value ="" id="page" name="page"/>
+                     	<input type="hidden" value ="" id="maxPageItems" name="maxPageItems"/>
+                 	</form>
                 </section>
             </div>
         </section>
+       
 
     </div> 
 </div>
+
 <!-- page end-->
 </body>
 </html>

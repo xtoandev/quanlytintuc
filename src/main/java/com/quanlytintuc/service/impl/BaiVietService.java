@@ -23,8 +23,8 @@ public class BaiVietService implements IBaiVietService {
 	}
 
 	@Override
-	public List<BaiViet> findAll() {
-		return baivietDAO.findAll();
+	public List<BaiViet> findAll(int offset,int limit) {
+		return baivietDAO.findAll( offset, limit);
 	}
 
 	@Override
@@ -50,6 +50,11 @@ public class BaiVietService implements IBaiVietService {
 			baivietDAO.delete(id);
 		}
 		
+	}
+
+	@Override
+	public Integer getTotalItems() {
+		return baivietDAO.getTotalItems();
 	}
 
 }

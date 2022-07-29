@@ -45,7 +45,7 @@ public class HomeController extends HttpServlet{
 		bv.setAnhNen(anhnen);
 		bv.setNgayDang(ngaydang);
 		bv.setTrangThai(trangthai);
-		baivietService.save(bv);
+		//baivietService.save(bv);
 		request.setAttribute("chude",chudeService.findAll());
 		RequestDispatcher rd = request.getRequestDispatcher("views/admin/home.jsp");
 		rd.forward(request, response);

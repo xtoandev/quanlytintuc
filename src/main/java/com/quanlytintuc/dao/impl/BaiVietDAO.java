@@ -14,11 +14,7 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 		return query(sql, new BaiVietMapper(),machude);
 	}
 
-	@Override
-	public List<BaiViet> findAll() {
-		String sql = "Select * From baiviet";
-		return query(sql ,new BaiVietMapper());
-	}
+	
 	/*
 	@Override
 	public Long save(BaiViet baiviet) {	
@@ -72,7 +68,12 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 			}
 		}
 	}*/
-
+	@Override
+	public List<BaiViet> findAll(int offset,int limit) {
+		String sql = "Select * From baiviet limit ?, ?";
+		
+		return query(sql ,new BaiVietMapper(),offset,limit);
+	}
 	@Override
 	public Long save(BaiViet baiviet) {
 		String sql = "insert into baiviet (tieude ,mataikhoan ,mota ,noidung ,anhnen,ngaydang, trangthai)" + 
@@ -116,6 +117,15 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 		String sql = "DELETE FROM baiviet WHERE mabaiviet = ?";
 		update(sql,id);
 	}
+
+	@Override
+	public Integer getTotalItems() {
+		String sql = "SELECT COUNT(*) FROM baiviet";
+		return sumRowsData(sql);
+	}
+
+
+	
 
 	
 }

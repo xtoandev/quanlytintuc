@@ -20,7 +20,7 @@
                         <span>Quản lý bài viết</span>
                     </a>
                     <ul class="sub">
-                       <li><a href="<c:url value = '/admin-danhsachbaiviet' />">Danh sách bài viết</a></li>
+                       <li><a href="<c:url value = '/admin-danhsachbaiviet?page=1&maxPageItems=5' />">Danh sách bài viết</a></li>
                         <li><a href="javascript:;">Duyệt báo cáo tình trạng máy</a></li>
                         <li><a href="javascript:;">Báo cáo tình trạng máy</a></li>
                         <li><a href="javascript:;">Đăng ký sử dụng phòng máy</a></li>

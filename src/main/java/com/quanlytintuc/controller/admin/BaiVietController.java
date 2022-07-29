@@ -1,6 +1,7 @@
 package com.quanlytintuc.controller.admin;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
@@ -27,7 +28,25 @@ public class BaiVietController extends HttpServlet{
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		BaiViet model = new BaiViet();
-		model.setListData(baivietService.findAll());
+		String pageStr = request.getParameter("page");
+		String maxPageItemsStr = request.getParameter("maxPageItems");
+		if(pageStr != null) {
+			model.setPage(Integer.parseInt(pageStr));
+			System.out.println(model.getPage());
+		} else {
+			model.setPage(1);
+		}
+		if(maxPageItemsStr != null) {
+			model.setMaxPageItems(Integer.parseInt(maxPageItemsStr));
+		}
+		
+		Integer offset = (model.getPage() - 1)* model.getMaxPageItems();
+		model.setListData(baivietService.findAll(offset,model.getMaxPageItems()));
+		model.setTotalItems(baivietService.getTotalItems());
+		model.setTotalPage((int)(Math.ceil((double) model.getTotalItems() / model.getMaxPageItems())));
+
+		
+		
 		request.setAttribute(SystemConstant.MODEL, model);
 		
 		RequestDispatcher rd = request.getRequestDispatcher("views/admin/baiviet/list.jsp");

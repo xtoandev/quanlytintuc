@@ -21,7 +21,7 @@ public class BaiVietMapper implements RowMapper<BaiViet>{
 			bv.setNoiDung(rs.getString("noidung"));
 			bv.setAnhNen(rs.getString("anhnen"));
 			Date ngay = rs.getDate("ngaydang");
-			DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");  
+			DateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");  
 			String strNgay = dateFormat.format(ngay); 
 			bv.setNgayDang(strNgay);
 			bv.setTrangThai(rs.getInt("trangthai"));
