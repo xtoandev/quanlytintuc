@@ -5,6 +5,7 @@ import java.util.List;
 import com.quanlytintuc.dao.IBaiVietDAO;
 import com.quanlytintuc.mapper.BaiVietMapper;
 import com.quanlytintuc.model.BaiViet;
+import com.quanlytintuc.paging.Pageble;
 
 public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 
@@ -69,11 +70,23 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 		}
 	}*/
 	@Override
-	public List<BaiViet> findAll(int offset,int limit) {
-		String sql = "Select * From baiviet limit ?, ?";
+	public List<BaiViet> findAll(Pageble pageble) {
+		String sql = "Select * From baiviet ";
+		//String sql = "Select * From baiviet limit ?, ?";
+		if (pageble.getSorter() != null) {
+			sql = sql + "Order by "+ pageble.getSorter().getSortName()+" "+pageble.getSorter().getSortBy()+" ";
+		}
+		if(pageble.getOffset() != null && pageble.getLimit() != null) {
+			sql = sql + " limit ?, ?";
+			return query(sql ,new BaiVietMapper(),pageble.getOffset(),pageble.getLimit());
+		}else {
+			return query(sql ,new BaiVietMapper());
+		}
 		
-		return query(sql ,new BaiVietMapper(),offset,limit);
 	}
+	
+
+
 	@Override
 	public Long save(BaiViet baiviet) {
 		String sql = "insert into baiviet (tieude ,mataikhoan ,mota ,noidung ,anhnen,ngaydang, trangthai)" + 

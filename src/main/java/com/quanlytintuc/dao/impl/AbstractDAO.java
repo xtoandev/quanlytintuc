@@ -119,7 +119,7 @@ public class AbstractDAO<T> implements GenericDAO<T> {
 
 	@Override
 	public Long insert(String sql, Object... parameters) {
-		// TODO Auto-generated method stub
+		
 		ResultSet resultSet = null;
 		Long id = null;
 		Connection connection = getConnection();
@@ -199,7 +199,6 @@ public class AbstractDAO<T> implements GenericDAO<T> {
 			} catch (SQLException e) {
 			}
 		}
-		System.out.println("tong so: "+id);
 		return id;
 	}
 }

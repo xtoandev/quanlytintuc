@@ -13,7 +13,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.quanlytintuc.constant.SystemConstant;
 import com.quanlytintuc.model.BaiViet;
+import com.quanlytintuc.paging.PageRequest;
+import com.quanlytintuc.paging.Pageble;
 import com.quanlytintuc.service.IBaiVietService;
+import com.quanlytintuc.sort.Sorter;
+import com.quanlytintuc.utils.FormUtil;
 
 @WebServlet(urlPatterns = {"/admin-danhsachbaiviet"})
 public class BaiVietController extends HttpServlet{
@@ -27,28 +31,14 @@ public class BaiVietController extends HttpServlet{
 	private static final long serialVersionUID = 1L;
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		BaiViet model = new BaiViet();
-		String pageStr = request.getParameter("page");
-		String maxPageItemsStr = request.getParameter("maxPageItems");
-		if(pageStr != null) {
-			model.setPage(Integer.parseInt(pageStr));
-			System.out.println(model.getPage());
-		} else {
-			model.setPage(1);
-		}
-		if(maxPageItemsStr != null) {
-			model.setMaxPageItems(Integer.parseInt(maxPageItemsStr));
-		}
-		
-		Integer offset = (model.getPage() - 1)* model.getMaxPageItems();
-		model.setListData(baivietService.findAll(offset,model.getMaxPageItems()));
+		BaiViet model = FormUtil.toModel(BaiViet.class, request);
+		Pageble pageble = new PageRequest(model.getPage(),
+											model.getMaxPageItems(),
+											new Sorter(model.getSortName(),model.getSortBy()));
+		model.setListData(baivietService.findAll(pageble));
 		model.setTotalItems(baivietService.getTotalItems());
 		model.setTotalPage((int)(Math.ceil((double) model.getTotalItems() / model.getMaxPageItems())));
-
-		
-		
 		request.setAttribute(SystemConstant.MODEL, model);
-		
 		RequestDispatcher rd = request.getRequestDispatcher("views/admin/baiviet/list.jsp");
 		rd.forward(request, response);
 	}

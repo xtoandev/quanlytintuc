@@ -10,6 +10,7 @@ import javax.inject.Inject;
 
 import com.quanlytintuc.dao.IBaiVietDAO;
 import com.quanlytintuc.model.BaiViet;
+import com.quanlytintuc.paging.Pageble;
 import com.quanlytintuc.service.IBaiVietService;
 
 public class BaiVietService implements IBaiVietService {
@@ -23,8 +24,8 @@ public class BaiVietService implements IBaiVietService {
 	}
 
 	@Override
-	public List<BaiViet> findAll(int offset,int limit) {
-		return baivietDAO.findAll( offset, limit);
+	public List<BaiViet> findAll(Pageble pageble) {
+		return baivietDAO.findAll(pageble);
 	}
 
 	@Override
