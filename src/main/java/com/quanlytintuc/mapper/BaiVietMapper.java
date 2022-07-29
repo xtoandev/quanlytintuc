@@ -20,13 +20,10 @@ public class BaiVietMapper implements RowMapper<BaiViet>{
 			bv.setMoTa(rs.getString("mota"));
 			bv.setNoiDung(rs.getString("noidung"));
 			bv.setAnhNen(rs.getString("anhnen"));
-			bv.setHinhAnh(rs.getString("hinhanh"));
-			bv.setLinkBaiViet(rs.getString("linkbaiviet"));
 			Date ngay = rs.getDate("ngaydang");
-			DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");  
+			DateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy");  
 			String strNgay = dateFormat.format(ngay); 
 			bv.setNgayDang(strNgay);
-			bv.setLuotXem(rs.getInt("luotxem"));
 			bv.setTrangThai(rs.getInt("trangthai"));
 			return bv;
 		} catch (SQLException e) {

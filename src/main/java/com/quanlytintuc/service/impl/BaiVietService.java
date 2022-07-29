@@ -23,15 +23,15 @@ public class BaiVietService implements IBaiVietService {
 	}
 
 	@Override
-	public List<BaiViet> findAll() {
-		return baivietDAO.findAll();
+	public List<BaiViet> findAll(int offset,int limit) {
+		return baivietDAO.findAll( offset, limit);
 	}
 
 	@Override
 	public BaiViet save(BaiViet baiviet) {
 		String dateNow = (java.time.LocalDate.now()).toString();
 		baiviet.setNgayDang(dateNow);
-		baiviet.setLuotXem(0);
+		
 		Long newID = baivietDAO.save(baiviet);
 		return baivietDAO.findOne(newID);
 	}
@@ -50,6 +50,11 @@ public class BaiVietService implements IBaiVietService {
 			baivietDAO.delete(id);
 		}
 		
+	}
+
+	@Override
+	public Integer getTotalItems() {
+		return baivietDAO.getTotalItems();
 	}
 
 }

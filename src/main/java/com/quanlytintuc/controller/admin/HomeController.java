@@ -14,7 +14,7 @@ import com.quanlytintuc.model.BaiViet;
 import com.quanlytintuc.service.IBaiVietService;
 import com.quanlytintuc.service.IChuDeService;
 
-@WebServlet(urlPatterns = {"/admin-trang-chu"})
+@WebServlet(urlPatterns = {"/admin-trangchu"})
 public class HomeController extends HttpServlet{
 
 	/**
@@ -45,7 +45,7 @@ public class HomeController extends HttpServlet{
 		bv.setAnhNen(anhnen);
 		bv.setNgayDang(ngaydang);
 		bv.setTrangThai(trangthai);
-		baivietService.save(bv);
+		//baivietService.save(bv);
 		request.setAttribute("chude",chudeService.findAll());
 		RequestDispatcher rd = request.getRequestDispatcher("views/admin/home.jsp");
 		rd.forward(request, response);

@@ -161,5 +161,45 @@ public class AbstractDAO<T> implements GenericDAO<T> {
 			}
 		}
 	}
+	
+	public Integer sumRowsData(String sql) {
 		
+		ResultSet resultSet = null;
+		int id = 0;
+		Connection connection = getConnection();
+		PreparedStatement statement = null;
+		try {
+			connection.setAutoCommit(false);
+			statement = connection.prepareStatement(sql);
+			resultSet = statement.executeQuery();
+			if(resultSet.next()) {
+				id =  resultSet.getInt(1);
+			}
+			
+		} catch (SQLException e) {
+			if(connection != null) {
+				try {
+					connection.rollback();
+				} catch (SQLException e1) {
+					e1.printStackTrace();
+				}
+			}
+			e.printStackTrace();
+		} finally {
+			try {
+				if (connection != null) {
+					connection.close();
+				}
+				if (statement != null) {
+					statement.close();
+				}
+				if (resultSet != null) {
+					resultSet.close();
+				}
+			} catch (SQLException e) {
+			}
+		}
+		System.out.println("tong so: "+id);
+		return id;
+	}
 }
