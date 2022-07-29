@@ -1,5 +1,10 @@
 package com.quanlytintuc.dao;
 
-public interface IChuDeDAO {
+import java.util.List;
 
+import com.quanlytintuc.model.ChuDe;
+
+public interface IChuDeDAO extends GenericDAO<ChuDe> {
+	List<ChuDe> findAll();
+	
 }

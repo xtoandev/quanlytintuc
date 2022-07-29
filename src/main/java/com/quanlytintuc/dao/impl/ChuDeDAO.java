@@ -1,7 +1,19 @@
 package com.quanlytintuc.dao.impl;
 
-import com.quanlytintuc.dao.IChuDeDAO;
+import java.util.List;
 
-public class ChuDeDAO implements IChuDeDAO{
-	List<ChuDeModel>
+import com.quanlytintuc.dao.IChuDeDAO;
+import com.quanlytintuc.mapper.ChuDeMapper;
+import com.quanlytintuc.model.ChuDe;
+
+public class ChuDeDAO extends AbstractDAO<ChuDe> implements IChuDeDAO{
+	
+	
+	
+	@Override
+	public List<ChuDe> findAll() {
+		String sql = "Select * From chude";
+		return query(sql, new ChuDeMapper());
+	}
+	
 }
