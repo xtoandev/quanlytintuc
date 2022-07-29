@@ -5,8 +5,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta charset="UTF-8">
 <title>Danh sách bài viết</title>
+
 </head>
 <body>
 <!-- page start-->
@@ -64,6 +66,8 @@
                      	<ul class="pagination" id="pagination"></ul>
                      	<input type="hidden" value ="" id="page" name="page"/>
                      	<input type="hidden" value ="" id="maxPageItems" name="maxPageItems"/>
+                 		<input type="hidden" value ="" id="sortName" name="sortName"/>
+                     	<input type="hidden" value ="" id="sortBy" name="sortBy"/>
                  	</form>
                 </section>
             </div>
@@ -74,5 +78,8 @@
 </div>
 
 <!-- page end-->
+
 </body>
+
 </html>
+

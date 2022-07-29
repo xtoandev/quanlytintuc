@@ -11,6 +11,7 @@ public class HttpUtil {
 	public HttpUtil(String value) {
 		this.value = value;
 	}
+	
 	public <T> T toModel(Class<T> tClass) {
 		try {
 			return new ObjectMapper().readValue(value, tClass);

@@ -22,6 +22,7 @@
     <link href="<c:url value = 'template/admin/css/style.css'/>" rel="stylesheet">
     <link href="<c:url value = 'template/admin/css/style-responsive.css'/>" rel="stylesheet"/>
     
+    
 </head>
 <body>
 	<!-- header -->
@@ -70,31 +71,30 @@
 
 <!--common script init for all pages-->
 <script src = " <c:url value ='template/admin/js/scripts.js'/>"></script>
-
 <!-- pagging -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="<c:url value = 'template/admin/jquery.twbsPagination.js'/>" type="text/javascript"></script>
-
 <!--script for this page-->
 <script type="text/javascript">
-var totalPages = ${model.totalPage};
-var currentPage = ${model.page};
-var limit = 5;
-$(function () {
-	window.pagObj = $('#pagination').twbsPagination({
-		totalPages: totalPages,
-		visiblePages: currentPage + 1,
-		startPage: currentPage,
-		onPageClick: function (event, page) {
-			if (currentPage != page) {
-				$('#maxPageItems').val(limit);
-				$('#page').val(page);
-				
-				$('#formPaging').submit();
+	var totalPages = ${model.totalPage};
+	var currentPage = ${model.page};
+	var limit = 5;
+	$(function () {
+		window.pagObj = $('#pagination').twbsPagination({
+			totalPages: totalPages,
+			visiblePages: 5,
+			startPage: currentPage,
+			onPageClick: function (event, page) {
+				if (currentPage != page) {
+					$('#maxPageItems').val(limit);
+					$('#page').val(page);
+					$('#sortName').val('ngaydang');
+					$('#sortBy').val('desc');
+					$('#formPaging').submit();
+				}
 			}
-		}
+		});
 	});
-});
 </script>
 
 </body>
