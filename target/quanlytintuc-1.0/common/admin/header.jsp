@@ -24,13 +24,12 @@
         <li class="dropdown">
             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                 <img alt="" src="images/avatar1_small.jpg">
-                <span class="username">Xuân Toán</span>
+                <span class="username">${TAIKHOANMODEL.hoVaTen }</span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
-                <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
-                <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
-                <li><a href="login.html"><i class="fa fa-key"></i> Đăng xuất</a></li>
+                <li><a href="#"><i class=" fa fa-suitcase"></i>Thong tin ca nhan</a></li>
+                <li><a href="<c:url value='/dang-nhap?action=logout' />"><i class="fa fa-key"></i> Đăng xuất</a></li>
             </ul>
         </li>
         <!-- user login dropdown end -->

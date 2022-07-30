@@ -14,7 +14,7 @@ import com.quanlytintuc.model.BaiViet;
 import com.quanlytintuc.service.IBaiVietService;
 import com.quanlytintuc.service.IChuDeService;
 
-@WebServlet(urlPatterns = {"/admin-trangchu"})
+@WebServlet(urlPatterns = {"/admin-trang-chu"})
 public class HomeController extends HttpServlet{
 
 	/**

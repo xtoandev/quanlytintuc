@@ -7,10 +7,7 @@ public class PageRequest implements Pageble{
 	private Integer maxPageItem;
 	private Sorter sorter;
 	
-	
-	
 	public PageRequest(Integer page, Integer maxPageItem,Sorter sorter) {
-
 		this.page = page;
 		this.maxPageItem = maxPageItem;
 		this.sorter = sorter;
@@ -18,13 +15,11 @@ public class PageRequest implements Pageble{
 
 	@Override
 	public Integer getPage() {
-		// TODO Auto-generated method stub
 		return this.page;
 	}
 
 	@Override
 	public Integer getOffset() {
-		// TODO Auto-generated method stub
 		if(this.page!=null) {
 			return (this.page - 1) * this.maxPageItem;
 		}
@@ -35,13 +30,11 @@ public class PageRequest implements Pageble{
 
 	@Override
 	public Integer getLimit() {
-		// TODO Auto-generated method stub
 		return this.maxPageItem;
 	}
 
 	@Override
 	public Sorter getSorter() {
-		// TODO Auto-generated method stub
 		if(this.sorter != null)
 			return this.sorter;
 		return null;
