@@ -3,7 +3,6 @@ package com.quanlytintuc.mapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.quanlytintuc.model.BaiViet;
 import com.quanlytintuc.model.ChuDe;
 
 public class ChuDeMapper implements RowMapper<ChuDe>{

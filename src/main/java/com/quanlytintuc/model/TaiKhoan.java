@@ -4,23 +4,23 @@ package com.quanlytintuc.model;
 
 public class TaiKhoan {
 	private Long maTaiKhoan;
-	private String tenDangNhap;
 	private String matKhau;
 	private Long maQuyen;
 	private String hoVaTen;
 	private String ngaySinh;
 	private String email;
 	private int trangThai;
+	private Quyen quyen = new Quyen();
+	
 	
 	public TaiKhoan() {
 		
 	}
 	
-	public TaiKhoan(Long maTaiKhoan, String tenDangNhap, String matKhau, Long maQuyen, String hoVaTen, String ngaySinh,
+	public TaiKhoan(Long maTaiKhoan, String matKhau, Long maQuyen, String hoVaTen, String ngaySinh,
 			String email, int trangThai) {
 		
 		this.maTaiKhoan = maTaiKhoan;
-		this.tenDangNhap = tenDangNhap;
 		this.matKhau = matKhau;
 		this.maQuyen = maQuyen;
 		this.hoVaTen = hoVaTen;
@@ -35,12 +35,7 @@ public class TaiKhoan {
 	public void setMaTaiKhoan(Long maTaiKhoan) {
 		this.maTaiKhoan = maTaiKhoan;
 	}
-	public String getTenDangNhap() {
-		return tenDangNhap;
-	}
-	public void setTenDangNhap(String tenDangNhap) {
-		this.tenDangNhap = tenDangNhap;
-	}
+
 	public String getMatKhau() {
 		return matKhau;
 	}
@@ -76,6 +71,27 @@ public class TaiKhoan {
 	}
 	public void setTrangThai(int trangThai) {
 		this.trangThai = trangThai;
+	}
+
+	
+	public Quyen getQuyen() {
+		return quyen;
+	}
+
+	public void setQuyen(Quyen quyen) {
+		this.quyen = quyen;
+	}
+
+	public TaiKhoan(Long maTaiKhoan, String matKhau, Long maQuyen, String hoVaTen, String ngaySinh, String email,
+			int trangThai, Quyen quyen) {
+		this.maTaiKhoan = maTaiKhoan;
+		this.matKhau = matKhau;
+		this.maQuyen = maQuyen;
+		this.hoVaTen = hoVaTen;
+		this.ngaySinh = ngaySinh;
+		this.email = email;
+		this.trangThai = trangThai;
+		this.quyen = quyen;
 	}
 	
 	
