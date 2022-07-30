@@ -22,6 +22,7 @@ public class TaiKhoanMapper implements RowMapper<TaiKhoan>{
 			try {
 				quyen.setMaQuyen(rs.getLong("maquyen"));
 				quyen.setTenQuyen(rs.getString("tenquyen"));
+				tk.setQuyen(quyen);
 			}catch (SQLException e) {
 				System.out.println(e.getMessage());
 			}

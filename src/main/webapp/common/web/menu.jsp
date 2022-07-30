@@ -12,7 +12,7 @@
                         <li class="nav-item"><a class="nav-link" href="#!">Về chúng tôi</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Liên hệ</a></li>
                         <c:if test="${not empty TAIKHOANMODEL }"> 
-                        	<li class="nav-item">${TAIKHOANMODEL.hovaten }</li>
+                        	<li class="nav-item">${TAIKHOANMODEL.hoVaTen }</li>
                         	<li class="nav-item"><a class="nav-link " aria-current="page" href="<c:url value='/dang-nhap?action=logout' />">Dang xuat</a></li>
                         </c:if>
                          <c:if test="${ empty TAIKHOANMODEL }"> 

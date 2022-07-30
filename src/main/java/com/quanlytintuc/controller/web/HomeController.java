@@ -1,6 +1,7 @@
 package com.quanlytintuc.controller.web;
 
 import java.io.IOException;
+import java.util.ResourceBundle;
 
 import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
@@ -29,11 +30,19 @@ public class HomeController extends HttpServlet {
 	@Inject
 	private ITaiKhoanService taikhoanService;
 	
+	ResourceBundle resourceBundle = ResourceBundle.getBundle("message");
 	
 	private static final long serialVersionUID = 1L;
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String action = request.getParameter("action");
+		String message = request.getParameter("message");
+		String alert = request.getParameter("alert");
+		if(message != null && alert != null) {
+			request.setAttribute("message", resourceBundle.getString(message));
+			request.setAttribute("alert", alert);
+		}
+		
 		
 		if(action!= null && action.equals("login")) {
 			RequestDispatcher rd = request.getRequestDispatcher("views/login.jsp");
@@ -53,7 +62,9 @@ public class HomeController extends HttpServlet {
 		String action = request.getParameter("action");
 		if(action!= null && action.equals("login")) {
 			TaiKhoan user = FormUtil.toModel(TaiKhoan.class, request);
+			
 			user = taikhoanService.findByEmailAndPassAndStatus(user.getEmail(), user.getMatKhau());
+			
 			if(user != null && user.getTrangThai() == 1) {
 				SessionUtil.getInstance().putValue(request, "TAIKHOANMODEL", user);
 				if(user.getQuyen().getTenQuyen().equals("admin")) {
@@ -62,13 +73,9 @@ public class HomeController extends HttpServlet {
 					response.sendRedirect(request.getContextPath()+"/trang-chu");
 				}
 			}else {
-				response.sendRedirect(request.getContextPath()+"/dang-nhap?action=login");
+				response.sendRedirect(request.getContextPath()+"/dang-nhap?action=login&message=username_password_invalid&alert=danger");
 			}
-		}else {
-			RequestDispatcher rd = request.getRequestDispatcher("views/web/home.jsp");
-			rd.forward(request, response);
 		}
-		
 	}
 	
 	

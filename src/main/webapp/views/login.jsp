@@ -22,6 +22,11 @@
     <div class="container">
       <form id="formLogin" class="form-signin" action="<c:url value='/dang-nhap'/>" method="post">
         <h2 class="form-signin-heading">Đăng nhập</h2>
+        <c:if test="${not empty message}">
+					<div class="alert alert-${alert}">
+							${message}
+					</div>
+		</c:if>
         <div class="login-wrap">
             <div class="user-login-info">
                 <input type="text" class="form-control" placeholder="Nhập email" autofocus name ="email">
