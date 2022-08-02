@@ -3,10 +3,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+
 </head>
 <body>
-
+ <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright © 2018 PXT. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                                </div>
+                            </div>
+                        </div>
 </body>
 </html>

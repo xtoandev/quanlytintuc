@@ -2,8 +2,998 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b40a8054-0cc6-419f-a6a9-e6bf5863c4b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/quanlytintuc/controller/admin/api/BaiVietAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/quanlytintuc/controller/admin/api/BaiVietAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/quanlytintuc/model/AbstractModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/quanlytintuc/model/AbstractModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/quanlytintuc/model/BaiViet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/quanlytintuc/model/BaiViet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/common/admin/menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/decorators/admin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bs3/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bs3/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bs3/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bs3/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bs3/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bs3/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bs3/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bs3/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bs3/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bs3/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bs3/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bs3/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bucket-ico-fonts/bucket-ico-font.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bucket-ico-fonts/bucket-ico-font.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bucket-ico-fonts/bucket-ico-font.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/bucket-ico-fonts/bucket-ico-font.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/blue-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/bootstrap-reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/bootstrap-switch.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/bucket-ico-fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/clndr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/default-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/green-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/invoice-print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/jquery.steps.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/orange-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/purple-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/style-responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/table-responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/css/turquoise-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/spinning.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/_spinning.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/404.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/500.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/acc-expand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/avatar-mini-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/avatar-mini-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/avatar-mini-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/avatar-mini.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/avatar1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/avatar1_small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/bucket-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/chat-avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/chat-user-thumb-f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/chat-user-thumb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/crazy-price.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/customSelect-arrow.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/details_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/details_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/flags/de.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/flags/es.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/flags/fr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/flags/ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/flags/us.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/gallery/image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/gallery/image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/gallery/image3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/gallery/image4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/gallery/image5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/input-spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/lock-screen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/lock_thumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/nav-expand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/product_img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/search-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/sm-img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/sm-img-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/sm-img-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/top-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/twitter_corner_black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/twitter_corner_blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/images/weather_image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/css/demo_page.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/css/demo_table.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/css/demo_table_jui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/css/jquery.dataTables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/css/jquery.dataTables_themeroller.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/Sorting icons.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/back_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/back_enabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/back_enabled_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/forward_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/forward_enabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/forward_enabled_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/sort_asc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/sort_asc_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/sort_both.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/sort_desc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/images/sort_desc_disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/js/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/js/jquery.dataTables.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/DataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/api/api.internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/api/api.methods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/api/api.static.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.columns.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.constructor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.draw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.filter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.info.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.length.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.processing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.scrolling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.sizing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/core/core.support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/ext/ext.classes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/ext/ext.paging.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/ext/ext.sorting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/ext/ext.types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/model/model.column.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/model/model.defaults.columns.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/model/model.defaults.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/model/model.ext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/model/model.row.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/model/model.search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-datatable/src/model/model.settings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/advanced-form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-colorpicker/css/colorpicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-colorpicker/img/alpha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-colorpicker/img/hue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-colorpicker/img/saturation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-colorpicker/js/bootstrap-colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-colorpicker/less/colorpicker.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datepicker/css/datepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datepicker/js/bootstrap-datepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datepicker/less/datepicker.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-daterangepicker/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-daterangepicker/date.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-daterangepicker/daterangepicker-bs3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-daterangepicker/daterangepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-daterangepicker/daterangepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-daterangepicker/examples.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-daterangepicker/moment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-daterangepicker/moment.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/css/datetimepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.kr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.rs-latin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.rs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.ua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-datetimepicker/less/datetimepicker.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-fileupload/bootstrap-fileupload.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-fileupload/bootstrap-fileupload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-inputmask/bootstrap-inputmask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-inputmask/bootstrap-inputmask.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-switch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-timepicker/js/bootstrap-timepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-timepicker/less/timepicker.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/bootstrap-wysihtml5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/bootstrap-wysihtml5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.ar-AR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.bg-BG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.ca-CT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.cs-CZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.da-DK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.de-DE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.el-GR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.es-AR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.es-ES.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.fr-FR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.hr-HR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.it-IT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.ja-JP.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.ko-KR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.lt-LT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.mo-MD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.nb-NB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.nl-NL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.pl-PL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.ru-RU.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.sk-SK.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.sv-SE.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.tr-TR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.ua-UA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/locales/bootstrap-wysihtml5.zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/wysihtml5-0.3.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/bootstrap-wysihtml5/wysiwyg-color.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/c3-chart.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/c3-chart/c3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/c3-chart/c3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/c3-chart/c3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/calendar/clndr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/calendar/clndr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/calendar/moment-2.2.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/chart-js/Chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/chart-js/Chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/chartjs.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/CHANGES.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/build-config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/ckeditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/contents.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/en-au.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/en-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/en-gb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/fo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/fr-ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/mn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/sr-latn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/lang/zh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/about/dialogs/about.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/about/dialogs/logo_ckeditor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/clipboard/dialogs/paste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/dialog/dialogDefinition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/fakeobjects/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/image/dialogs/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/image/images/noimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/link/dialogs/anchor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/link/dialogs/link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/link/images/anchor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/magicline/images/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/pastefromword/filter/default.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/scayt/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/scayt/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/scayt/dialogs/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/scayt/dialogs/toolbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/cy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/eo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/ku.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/ug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/specialchar/dialogs/specialchar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/table/dialogs/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/tabletools/dialogs/tableCell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/wsc/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/wsc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/wsc/dialogs/ciframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/wsc/dialogs/wsc.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/plugins/wsc/dialogs/wsc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/ajax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/appendto.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/assets/inlineall/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/assets/outputxhtml/outputxhtml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/assets/posteddata.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/assets/sample.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/assets/sample.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/assets/uilanguages/languages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/divreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/inlineall.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/inlinebycode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/plugins/dialog/assets/my_dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/plugins/dialog/dialog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/plugins/enterkey/enterkey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.fla" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/outputforflash.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/plugins/htmlwriter/outputforflash.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/plugins/htmlwriter/outputhtml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/plugins/magicline/magicline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/plugins/toolbar/toolbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/plugins/wysiwygarea/fullpage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/readonly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/replacebyclass.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/replacebycode.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/sample.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/sample.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/sample_posteddata.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/tabindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/uicolor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/uilanguages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/samples/xhtmlstyle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/dialog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/dialog_ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/dialog_ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/dialog_ie8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/dialog_iequirks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/dialog_opera.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/editor_gecko.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/editor_ie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/editor_ie7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/editor_ie8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/editor_iequirks.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/images/mini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/skins/moono/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ckeditor/styles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/css3clock/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/css3clock/images/clockface.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/css3clock/images/hourhand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/css3clock/images/minhand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/css3clock/images/sechand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/css3clock/js/css3clock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/dashboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/data-tables/DT_bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/data-tables/DT_bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/data-tables/images/sort_asc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/data-tables/images/sort_both.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/data-tables/images/sort_desc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/data-tables/jquery.dataTables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/draggable-portlet.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/dynamic_table_init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/easypiechart/easypiechart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/easypiechart/jquery.easypiechart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/easypiechart/jquery.easypiechart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/evnt.calendar.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/external-dragging-calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/css/demo-ie8.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/css/jquery.fileupload-noscript.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/css/jquery.fileupload-ui-noscript.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/css/jquery.fileupload-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/css/jquery.fileupload.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/img/progressbar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/cors/jquery.postmessage-transport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/cors/jquery.xdr-transport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/jquery.fileupload-angular.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/jquery.fileupload-audio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/jquery.fileupload-image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/jquery.fileupload-jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/jquery.fileupload-process.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/jquery.fileupload-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/jquery.fileupload-validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/jquery.fileupload-video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/jquery.fileupload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/jquery.iframe-transport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/js/vendor/jquery.ui.widget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/gae-go/app.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/gae-go/app/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/gae-go/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/gae-go/static/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/gae-python/app.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/gae-python/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/gae-python/static/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/gae-python/static/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/node/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/node/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/node/public/files/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/node/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/node/tmp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/php/UploadHandler.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/php/files/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/php/files/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/file-uploader/server/php/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/API.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/FAQ.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/NEWS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/PLUGINS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/excanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/excanvas.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.colorhelpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.colorhelpers.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.animator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.animator.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.canvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.canvas.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.categories.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.categories.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.crosshair.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.crosshair.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.errorbars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.errorbars.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.fillbetween.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.fillbetween.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.growraf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.image.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.navigate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.navigate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.pie.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.pie.resize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.resize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.resize.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.selection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.selection.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.spline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.stack.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.stack.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.symbol.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.symbol.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.threshold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.threshold.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.time.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.flot.tooltip.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot-chart/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/flot.chart.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fuelux/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fuelux/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fuelux/css/tree-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fuelux/css/tree.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fuelux/img/tree-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fuelux/js/spinner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fuelux/js/spinner.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fuelux/js/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fuelux/js/tree.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fullcalendar/bootstrap-fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fullcalendar/fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fullcalendar/fullcalendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fullcalendar/fullcalendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fullcalendar/fullcalendar.print.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/fullcalendar/gcal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gauge/gauge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gauge/gauge.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/google-map/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/google-map/data/ajax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/google-map/data/points.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/google-map/libs.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/google-map/maplace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/google-map/maplace.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gritter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gritter/css/jquery.gritter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gritter/images/gritter-blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gritter/images/gritter-brown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gritter/images/gritter-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gritter/images/gritter-long.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gritter/images/gritter-purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gritter/images/gritter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gritter/images/ie-spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gritter/js/jquery.gritter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/gritter/js/jquery.gritter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/hover-dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/jquery.icheck.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/jquery.icheck.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/_all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/aero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/aero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/aero@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/blue@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/flat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/flat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/flat@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/green@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/grey@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/orange@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/pink@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/purple@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/red@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/flat/yellow@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/futurico/futurico.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/futurico/futurico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/futurico/futurico@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/_all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/aero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/line.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/line@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/line/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/_all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/aero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/aero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/aero@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/blue@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/green@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/grey@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/minimal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/minimal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/minimal@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/orange@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/pink@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/purple@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/red@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/minimal/yellow@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/polaris/polaris.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/polaris/polaris.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/polaris/polaris@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/_all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/aero.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/aero.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/aero@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/blue@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/green@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/grey@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/orange@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/pink@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/purple@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/red@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/square.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/square@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/yellow.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/skins/square/yellow@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/zepto.icheck.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/iCheck/zepto.icheck.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/icheck-init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ie8-responsive-file-warning.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/PSD/sprite-skin.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/css/ion.rangeSlider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/css/ion.rangeSlider.skinFlat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/css/ion.rangeSlider.skinNice.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/css/ion.rangeSlider.skinSimple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/css/normalize.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/img/sprite-skin-flat-red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/img/sprite-skin-flat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/img/sprite-skin-nice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/img/sprite-skin-simple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/js/ion-rangeSlider/ion.rangeSlider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/js/ion-rangeSlider/ion.rangeSlider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/ion.rangeSlider-1.8.2/js/vendor/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/jplayer.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/js/Jplayer.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/js/circle.player.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/js/jplayer.playlist.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/js/jquery.grab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/js/jquery.jplayer.inspector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/js/jquery.jplayer.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/js/jquery.transform2d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/js/mod.csstransforms.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/js/popcorn.jplayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/js/popcorn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/js/popcorn.player.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/js/popcorn.subtitle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/blue.monday/jplayer.blue.monday.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/blue.monday/jplayer.blue.monday.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/blue.monday/jplayer.blue.monday.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/blue.monday/jplayer.blue.monday.seeking.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/blue.monday/jplayer.blue.monday.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/circle.skin/bgr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/circle.skin/buffer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/circle.skin/circle.player.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/circle.skin/controls.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/circle.skin/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/circle.skin/progress_sprite.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/pink.flag/jplayer.pink.flag.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/pink.flag/jplayer.pink.flag.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/pink.flag/jplayer.pink.flag.seeking.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jplayer/skin/pink.flag/jplayer.pink.flag.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-1.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-multi-select/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-multi-select/css/multi-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-multi-select/img/switch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-multi-select/img/switch_original.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-multi-select/js/jquery.multi-select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-multi-select/js/jquery.quicksearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-placeholder/jquery.placeholder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-steps/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-steps/jquery.steps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-steps/src/_banner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-steps/src/defaults.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-steps/src/enums.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-steps/src/helper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-steps/src/model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-steps/src/privates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-steps/src/publics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-steps/steps.jquery.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-tags-input/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-tags-input/jquery.tagsinput.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-tags-input/jquery.tagsinput.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-tags-input/jquery.tagsinput.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui-1.9.2.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/animated-overlay.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_diagonals-thick_18_b81900_40x40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_diagonals-thick_20_666666_40x40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_flat_0_aaaaaa_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_flat_10_000000_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_flat_75_ffffff_40x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_glass_100_f6f6f6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_glass_100_fdf5ce_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_glass_55_fbf9ee_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_glass_65_ffffff_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_glass_75_dadada_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_glass_75_e6e6e6_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_glass_95_fef1ec_1x400.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_gloss-wave_35_f6a828_500x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_highlight-soft_75_cccccc_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-icons_222222_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-icons_228ef1_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-icons_2e83ff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-icons_454545_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-icons_888888_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-icons_cd0a0a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-icons_ef8c08_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-icons_ffd27a_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/images/ui-icons_ffffff_256x240.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/jquery-ui-1.10.1.custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/jquery-ui-1.10.1.custom.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/jquery-ui-1.10.1.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/jquery-ui-1.10.2.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery-ui/jquery-ui-1.9.2.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery.customSelect.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery.dcjqaccordion.2.7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery.isotope.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery.nicescroll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery.scrollTo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery.scrollTo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery.scrollTo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery.scrollTo/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery.scrollTo/jquery.scrollTo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery.scrollTo/jquery.scrollTo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jquery-jvectormap-1.1.1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jquery-jvectormap-1.1.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jquery-jvectormap-1.2.2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jquery-jvectormap-1.2.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jquery-jvectormap-au-mill-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jquery-jvectormap-us-aea-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jquery-jvectormap-us-lcc-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jquery-jvectormap-us-merc-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jquery-jvectormap-us-mill-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jquery-jvectormap-world-mill-en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/data/jquery.vmap.sampledata.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/jquery.vmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/jquery.vmap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/jquery.vmap.packed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/jqvmap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/continents/jquery.vmap.africa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/continents/jquery.vmap.asia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/continents/jquery.vmap.australia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/continents/jquery.vmap.europe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/continents/jquery.vmap.north-america.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/continents/jquery.vmap.south-america.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/continents/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/jquery.vmap.algeria.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/jquery.vmap.brazil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/jquery.vmap.europe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/jquery.vmap.france.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/jquery.vmap.germany.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/jquery.vmap.russia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/jquery.vmap.usa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/jvector-map/jqvmap/maps/jquery.vmap.world.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/mini-upload-form/assets/css/bucketmin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/mini-upload-form/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/mini-upload-form/assets/img/border-image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/mini-upload-form/assets/img/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/mini-upload-form/assets/js/jquery.fileupload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/mini-upload-form/assets/js/jquery.iframe-transport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/mini-upload-form/assets/js/jquery.knob.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/mini-upload-form/assets/js/jquery.ui.widget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/mini-upload-form/assets/js/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/mini-upload-form/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/mini-upload-form/upload.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/morris-chart/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/morris-chart/morris.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/morris-chart/morris.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/morris-chart/morris.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/morris-chart/raphael-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/morris.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/nestable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/nestable/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/nestable/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/nestable/jquery.nestable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/nestable/jquery.nestable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select-init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/component.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/release.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2-bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2-spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2.jquery.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_en.js.template" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_no.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_pt-PT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_rs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2_locale_zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/select2/select2x2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/skycons/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/skycons/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/skycons/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/skycons/skycons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/sparkline/jquery.sparkline.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/table-editable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/theme-switcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/toggle-init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/admin/js/validation-init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/views/admin/baiviet/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/views/admin/baiviet/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/constant/SystemConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/constant/SystemConstant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/controller/admin/BaiVietController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/controller/admin/BaiVietController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/controller/admin/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/controller/admin/HomeController.class" afterDir="false" />
@@ -17,6 +1007,7 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/dao/impl/BaiVietDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/dao/impl/BaiVietDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/dao/impl/ChuDeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/dao/impl/ChuDeDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/dao/impl/TaiKhoanDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/dao/impl/TaiKhoanDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/filter/AuthorizationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/filter/AuthorizationFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/mapper/BaiVietMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/mapper/BaiVietMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/mapper/ChuDeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/mapper/ChuDeMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/mapper/RowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/mapper/RowMapper.class" afterDir="false" />
@@ -40,6 +1031,20 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/utils/FormUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/utils/FormUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/utils/HttpUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/utils/HttpUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/quanlytintuc/utils/SessionUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/quanlytintuc/utils/SessionUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.quanlytintuc/quanlytintuc/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.quanlytintuc/quanlytintuc/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.quanlytintuc/quanlytintuc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/com.quanlytintuc/quanlytintuc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quanlytintuc-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/quanlytintuc-1.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quanlytintuc-1.0/template/admin/js/file-uploader/server/node/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quanlytintuc-1.0/template/admin/js/file-uploader/server/node/public/files/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quanlytintuc-1.0/template/admin/js/file-uploader/server/node/tmp/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quanlytintuc-1.0/template/admin/js/file-uploader/server/php/files/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quanlytintuc-1.0/template/admin/js/google-map/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quanlytintuc-1.0/template/admin/js/jquery-multi-select/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quanlytintuc-1.0/template/admin/js/jquery.scrollTo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quanlytintuc-1.0/template/admin/js/morris-chart/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/quanlytintuc-1.0/template/admin/js/skycons/.gitignore" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,9 +1057,10 @@
     <session id="-300484918">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -72,12 +1078,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/quanlytintuc/controller/web/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+            <state relative-caret-position="803">
+              <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -113,6 +1119,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -190,8 +1198,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,6 +1254,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659163588592</updated>
       <workItem from="1659163592137" duration="368000" />
+      <workItem from="1659291912628" duration="56000" />
     </task>
     <servers />
   </component>
@@ -260,25 +1267,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="368000" />
+    <option name="totallyTimeSpent" value="424000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Web" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -286,16 +1287,22 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="CDI" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="CDI" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,13 +1316,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/quanlytintuc/controller/web/HomeController.java</url>
-          <line>57</line>
+          <line>68</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/quanlytintuc/controller/web/HomeController.java</url>
-          <line>58</line>
+          <line>69</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -327,7 +1334,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/quanlytintuc/controller/web/HomeController.java</url>
-          <line>55</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -345,17 +1352,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/quanlytintuc/controller/web/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="803">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/quanlytintuc/mapper/TaiKhoanMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/quanlytintuc/controller/web/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="65" column="13" lean-forward="true" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
         </state>
       </provider>
     </entry>

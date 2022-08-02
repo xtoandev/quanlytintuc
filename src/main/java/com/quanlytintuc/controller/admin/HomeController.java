@@ -20,8 +20,7 @@ public class HomeController extends HttpServlet{
 	/**
 	 * 
 	 */
-	@Inject
-	private IChuDeService chudeService;
+
 	@Inject
 	private IBaiVietService baivietService;
 	
@@ -46,7 +45,7 @@ public class HomeController extends HttpServlet{
 		bv.setNgayDang(ngaydang);
 		bv.setTrangThai(trangthai);
 		//baivietService.save(bv);
-		request.setAttribute("chude",chudeService.findAll());
+		
 		RequestDispatcher rd = request.getRequestDispatcher("views/admin/home.jsp");
 		rd.forward(request, response);
 	}

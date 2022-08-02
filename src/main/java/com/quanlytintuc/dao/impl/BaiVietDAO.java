@@ -71,9 +71,11 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 	}*/
 	@Override
 	public List<BaiViet> findAll(Pageble pageble) {
-		String sql = "Select * From baiviet ";
+		String sql = "Select * From baiviet " 
+				+ " LEFT JOIN taikhoan ON baiviet.mataikhoan = taikhoan.mataikhoan"
+				+ " LEFT JOIN chude ON baiviet.machude = chude.machude ";
 		//String sql = "Select * From baiviet limit ?, ?";
-		if (pageble.getSorter() != null) {
+		if (pageble.getSorter() != null ) {
 			sql = sql + "Order by "+ pageble.getSorter().getSortName()+" "+pageble.getSorter().getSortBy()+" ";
 		}
 		if(pageble.getOffset() != null && pageble.getLimit() != null) {
@@ -89,10 +91,11 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 
 	@Override
 	public Long save(BaiViet baiviet) {
-		String sql = "insert into baiviet (tieude ,mataikhoan ,mota ,noidung ,anhnen,ngaydang, trangthai)" + 
-				"values(?,?,?,?,?,?,?) ";
+		String sql = "insert into baiviet (tieude ,mataikhoan,machude ,mota ,noidung ,anhnen,ngaydang, trangthai)" + 
+				"values(?,?,?,?,?,?,?,?) ";
 		return insert(sql,baiviet.getTieuDe()
 						 , baiviet.getMaTaiKhoan()
+						 , baiviet.getMaChuDe()
 						 , baiviet.getMoTa()
 						 , baiviet.getNoiDung()
 						 , baiviet.getAnhNen()
@@ -102,7 +105,10 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 
 	@Override
 	public BaiViet findOne(Long mabaiviet) {
-		String sql = "Select * From baiviet where baiviet.mabaiviet = ?";
+		String sql = "Select * From baiviet "
+				+ " LEFT JOIN taikhoan ON baiviet.mataikhoan = taikhoan.mataikhoan"
+				+ " LEFT JOIN chude ON baiviet.machude = chude.machude"
+				+" where baiviet.mabaiviet = ?";
 		List<BaiViet> bvs = query(sql, new BaiVietMapper(),mabaiviet);
 		return bvs.isEmpty() ? null : bvs.get(0);
 	}
@@ -111,6 +117,7 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 	public void update(BaiViet baiviet) {
 		String sql = "update baiviet SET tieude = ?"
 				+ ", mataikhoan = ?"
+				+ ", machude = ?"
 				+ ", mota = ?"
 				+ ", noidung = ?"
 				+ ", anhnen = ?"
@@ -118,6 +125,7 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 				" WHERE mabaiviet = ? ;";
 		update(sql, baiviet.getTieuDe()
 						 , baiviet.getMaTaiKhoan()
+						 , baiviet.getMaChuDe()
 						 , baiviet.getMoTa()
 						 , baiviet.getNoiDung()
 						 , baiviet.getAnhNen()

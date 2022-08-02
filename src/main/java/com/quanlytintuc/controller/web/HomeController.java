@@ -15,6 +15,7 @@ import com.quanlytintuc.model.TaiKhoan;
 import com.quanlytintuc.service.IBaiVietService;
 import com.quanlytintuc.service.ITaiKhoanService;
 import com.quanlytintuc.utils.FormUtil;
+import com.quanlytintuc.utils.MessageUtil;
 import com.quanlytintuc.utils.SessionUtil;
 
 
@@ -39,7 +40,7 @@ public class HomeController extends HttpServlet {
 		String message = request.getParameter("message");
 		String alert = request.getParameter("alert");
 		if(message != null && alert != null) {
-			request.setAttribute("message", resourceBundle.getString(message));
+			request.setAttribute("message", MessageUtil.showMessageLogin(message));
 			request.setAttribute("alert", alert);
 		}
 		

@@ -40,6 +40,7 @@
                                 <th>Ngày Đăng</th>
                                 <th>Chủ Đề</th>
                                 <th>Trạng Thái</th>
+                                <th colspan=3>Thao tác</th>
                             </tr>
                         </thead>
                          
@@ -58,6 +59,9 @@
                                     <td>${o.ngayDang}</td>
                                     <td>chude</td>
                                     <td>${o.trangThai}</td>
+                                    <td><button type="button" class="btn btn-infor"><i class="fa fa-eye"></i> Xem chi tiết </button></td>
+                                    <td><button type="button" class="btn btn-warning "><i class="fa fa-edit"></i> Sửa</button></td>
+                                    <td><button type="button" class="btn btn-danger "><i class="fa fa-trash-o"></i> Xóa</button></td></td>
                                 </tr>
                             </c:forEach>
                         </tbody>

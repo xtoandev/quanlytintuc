@@ -4,12 +4,14 @@ public class BaiViet extends AbstractModel<BaiViet> {
 	private Long maBaiViet;
 	private String tieuDe;
 	private Long maTaiKhoan;
+	private Long maChuDe;
 	private String moTa;
 	private String noiDung;
 	private String anhNen;
 	private String ngayDang;
 	private int  trangThai;
-	
+	ChuDe chude = new ChuDe();	
+	TaiKhoan taikhoan = new TaiKhoan();
 	
 	public BaiViet() {
 		
@@ -26,8 +28,6 @@ public class BaiViet extends AbstractModel<BaiViet> {
 		this.ngayDang = ngayDang;
 		this.trangThai = trangThai;
 	}
-
-	
 
 	public Long getMaBaiViet() {
 		return maBaiViet;
@@ -77,18 +77,14 @@ public class BaiViet extends AbstractModel<BaiViet> {
 		this.anhNen = anhNen;
 	}
 
-	
-
 	public String getNgayDang() {
 		return ngayDang;
 	}
-
+	
 	public void setNgayDang(String ngayDang) {
 		this.ngayDang = ngayDang;
 	}
-
 	
-
 	public int getTrangThai() {
 		return trangThai;
 	}
@@ -96,6 +92,30 @@ public class BaiViet extends AbstractModel<BaiViet> {
 	public void setTrangThai(int trangThai) {
 		this.trangThai = trangThai;
 	}
-	
+
+
+	public Long getMaChuDe() {
+		return maChuDe;
+	}
+
+	public void setMaChuDe(Long maChuDe) {
+		this.maChuDe = maChuDe;
+	}
+
+	public TaiKhoan getTaikhoan() {
+		return taikhoan;
+	}
+
+	public void setTaikhoan(TaiKhoan taikhoan) {
+		this.taikhoan = taikhoan;
+	}
+
+	public ChuDe getChude() {
+		return chude;
+	}
+
+	public void setChude(ChuDe chude) {
+		this.chude = chude;
+	}
 	
 }

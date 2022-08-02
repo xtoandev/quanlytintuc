@@ -9,6 +9,7 @@ import com.quanlytintuc.paging.Pageble;
 
 public interface IBaiVietService {
 	List<BaiViet> findAll(Pageble pageble);
+	BaiViet findOne(Long mabaiviet);
 	List<BaiViet> findByMaChuDe(Long machude);
 	BaiViet save(BaiViet baiviet);
 	BaiViet update(BaiViet baiviet);
