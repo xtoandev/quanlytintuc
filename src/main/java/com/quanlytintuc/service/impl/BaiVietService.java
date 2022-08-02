@@ -58,4 +58,9 @@ public class BaiVietService implements IBaiVietService {
 		return baivietDAO.getTotalItems();
 	}
 
+	@Override
+	public BaiViet findOne(Long mabaiviet) {
+		return baivietDAO.findOne(mabaiviet);
+	}
+
 }

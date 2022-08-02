@@ -3,8 +3,3 @@
 <%@include file="/common/taglib.jsp"%>
 
 <h1>admin</h1>
-<c:forEach items="${chude}" var="o" varStatus="loop">
-	     
-	     <p>${o.maChuDe}</p>
-	     <p>${o.tenChuDe}</p>                       
-</c:forEach>

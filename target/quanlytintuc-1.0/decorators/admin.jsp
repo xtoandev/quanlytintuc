@@ -4,73 +4,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="ThemeBucket">
-    <link rel="shortcut icon" href="<c:url value = 'images/favicon.png'/>" >
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><dec:title default="Trang Admin" /></title>
-    <!--Core CSS -->
-    <link href="<c:url value = 'template/admin/bs3/css/bootstrap.min.css'/>" rel="stylesheet">
-    <link href="<c:url value = 'template/admin/js/jquery-ui/jquery-ui-1.10.1.custom.min.css'/>" rel="stylesheet">
-    <link href="<c:url value = 'template/admin/css/bootstrap-reset.css'/>" rel="stylesheet">
-    <link href="<c:url value = 'template/admin/font-awesome/css/font-awesome.css'/>" rel="stylesheet">
-    <link href="<c:url value = 'template/admin/js/jvector-map/jquery-jvectormap-1.2.2.css'/>" rel="stylesheet">
-    <link href="<c:url value = 'template/admin/css/clndr.css'/>" rel="stylesheet">
-   
-    <!-- Custom styles for this template -->
-    <link href="<c:url value = 'template/admin/css/style.css'/>" rel="stylesheet">
-    <link href="<c:url value = 'template/admin/css/style-responsive.css'/>" rel="stylesheet"/>
     
+    <!-- Fontfaces CSS-->
+    <link href="<c:url value = 'css/font-face.css'/>" rel="stylesheet" media="all">
+    <link href="<c:url value = 'vendor/font-awesome-4.7/css/font-awesome.min.css'/>" rel="stylesheet" media="all">
+    <link href="<c:url value = 'vendor/font-awesome-5/css/fontawesome-all.min.css'/>" rel="stylesheet" media="all">
+    <link href="<c:url value = 'vendor/mdi-font/css/material-design-iconic-font.min.css'/>" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="<c:url value = 'vendor/bootstrap-4.1/bootstrap.min.css'/>" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="<c:url value = 'vendor/animsition/animsition.min.css'/>" rel="stylesheet" media="all">
+    <link href="<c:url value = 'vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css'/>" rel="stylesheet" media="all">
+    <link href="<c:url value = 'vendor/wow/animate.css'/>" rel="stylesheet" media="all">
+    <link href="<c:url value = 'vendor/css-hamburgers/hamburgers.min.css'/>" rel="stylesheet" media="all">
+    <link href="<c:url value = 'vendor/slick/slick.css'/>" rel="stylesheet" media="all">
+    <link href="<c:url value = 'vendor/select2/select2.min.css'/>" rel="stylesheet" media="all">
+    <link href="<c:url value = 'vendor/perfect-scrollbar/perfect-scrollbar.css'/>" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="<c:url value = 'css/theme.css'/>" rel="stylesheet" media="all">
     
 </head>
-<body>
+<body class="animsition">
+    <div class="page-wrapper">
 	<!-- header -->
 	    <%@ include file="/common/admin/header.jsp" %>
 	<!-- header -->
 	
+	<!-- menu -->
 	<%@ include file="/common/admin/menu.jsp" %>
+	<!-- menu -->
 	
-	<section id="container">
-		<!--main content start-->
-		<section id="main-content">
-			<section class="wrapper">
-				<dec:body/>
-			</section>
-		</section>
-		<!--main content end-->
-	</section>
 	
+	<!-- content -->
+	<div class="main-content">
+		<dec:body/>
+	</div>
+	<!-- content -->
 	
 	<!-- footer -->
 	    	<%@ include file="/common/admin/footer.jsp" %>
 	<!-- footer -->
 
 
-<!-- Placed js at the end of the document so the pages load faster -->
-<!--Core js-->
-<script src = " <c:url value ='template/admin/js/jquery.js'/>"></script>
-<script src = " <c:url value ='template/admin/js/jquery-ui/jquery-ui-1.10.1.custom.min.js'/>"></script>
-<script src = " <c:url value ='template/admin/bs3/js/bootstrap.min.js'/>"></script>
-<script src = " <c:url value ='template/admin/js/jquery.dcjqaccordion.2.7.js'/>"></script>
-<script src = " <c:url value ='template/admin/js/jquery.scrollTo.min.js'/>"></script>
-<script src = " <c:url value ='template/admin/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.js'/>"></script>
-<script src = " <c:url value ='template/admin/js/jquery.nicescroll.js'/>"></script>
-<script src = " <c:url value ='template/admin/js/skycons/skycons.js'/>"></script>
-<script src = " <c:url value ='template/admin/js/jquery.scrollTo/jquery.scrollTo.js'/>"></script>
-<script src = "//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src = " <c:url value ='template/admin/js/calendar/clndr.js'/>"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
-<script src = " <c:url value ='template/admin/js/calendar/moment-2.2.1.js'/>"></script>
-<script src = " <c:url value ='template/admin/js/evnt.calendar.init.js'/>"></script>
-<script src = " <c:url value ='template/admin/js/jvector-map/jquery-jvectormap-1.2.2.min.js'/>"></script>
-<script src = " <c:url value ='template/admin/js/jvector-map/jquery-jvectormap-us-lcc-en.js'/>"></script>
-<script src = " <c:url value ='template/admin/js/gauge/gauge.js'/>"></script>
+<!-- Jquery JS-->
+    <script src="<c:url value = 'vendor/jquery-3.2.1.min.js'/>"></script>
+    <!-- Bootstrap JS-->
+    <script src="<c:url value = 'vendor/bootstrap-4.1/popper.min.js'/>"></script>
+    <script src="<c:url value = 'vendor/bootstrap-4.1/bootstrap.min.js'/>"></script>
+    <script src="<c:url value = 'vendor/slick/slick.min.js'/>">
+    </script>
+    <script src="<c:url value = 'vendor/wow/wow.min.js'/>"></script>
+    <script src="<c:url value = 'vendor/animsition/animsition.min.js'/>"></script>
+    <script src="<c:url value = 'vendor/bootstrap-progressbar/bootstrap-progressbar.min.js'/>">
+    </script>
+    <script src="<c:url value = 'vendor/counter-up/jquery.waypoints.min.js'/>"></script>
+    <script src="<c:url value = 'vendor/counter-up/jquery.counterup.min.js'/>">
+    </script>
+    <script src="<c:url value = 'vendor/circle-progress/circle-progress.min.js'/>"></script>
+    <script src="<c:url value = 'vendor/perfect-scrollbar/perfect-scrollbar.js'/>"></script>
+    <script src="<c:url value = 'vendor/chartjs/Chart.bundle.min.js'/>"></script>
+    <script src="<c:url value = 'vendor/select2/select2.min.js'/>">
+    </script>
+
+    <!-- Main JS-->
+    <script src="<c:url value = 'js/main.js'/>"></script>
 
 
 
-<!--common script init for all pages-->
-<script src = " <c:url value ='template/admin/js/scripts.js'/>"></script>
+
 <!-- pagging -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="<c:url value = 'template/admin/jquery.twbsPagination.js'/>" type="text/javascript"></script>
