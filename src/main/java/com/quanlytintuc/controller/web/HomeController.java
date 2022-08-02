@@ -11,8 +11,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.quanlytintuc.model.BaiViet;
 import com.quanlytintuc.model.TaiKhoan;
 import com.quanlytintuc.service.IBaiVietService;
+import com.quanlytintuc.service.IChuDeService;
 import com.quanlytintuc.service.ITaiKhoanService;
 import com.quanlytintuc.utils.FormUtil;
 import com.quanlytintuc.utils.MessageUtil;
@@ -30,6 +32,8 @@ public class HomeController extends HttpServlet {
 	private IBaiVietService baivietService;
 	@Inject
 	private ITaiKhoanService taikhoanService;
+	@Inject
+	private IChuDeService chudeService;
 	
 	ResourceBundle resourceBundle = ResourceBundle.getBundle("message");
 	
@@ -52,6 +56,10 @@ public class HomeController extends HttpServlet {
 			SessionUtil.getInstance().removeValue(request, "TAIKHOANMODEL");
 			response.sendRedirect(request.getContextPath()+"/trang-chu");
 		}else {
+			BaiViet model = new BaiViet();
+			model.setListData(baivietService.findNew());
+			request.setAttribute("baivietmoi", model);
+			request.setAttribute("dschude",chudeService.findAll());
 			RequestDispatcher rd = request.getRequestDispatcher("views/web/home.jsp");
 			rd.forward(request, response);
 		}

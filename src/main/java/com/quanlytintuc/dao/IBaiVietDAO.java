@@ -14,7 +14,6 @@ public interface IBaiVietDAO extends GenericDAO<BaiViet>{
 	void update(BaiViet baiviet);
 	void delete(long id);
 	Integer getTotalItems();
-	
-	
+	List<BaiViet> findNew();
 	
 }

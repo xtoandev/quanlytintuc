@@ -15,4 +15,5 @@ public interface IBaiVietService {
 	BaiViet update(BaiViet baiviet);
 	void delete(long[] ids);
 	Integer getTotalItems();
+	List<BaiViet> findNew();
 }

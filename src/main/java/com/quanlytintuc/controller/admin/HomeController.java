@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.quanlytintuc.model.BaiViet;
 import com.quanlytintuc.service.IBaiVietService;
-import com.quanlytintuc.service.IChuDeService;
 
 @WebServlet(urlPatterns = {"/admin-trang-chu"})
 public class HomeController extends HttpServlet{

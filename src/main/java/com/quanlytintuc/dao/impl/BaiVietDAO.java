@@ -146,6 +146,16 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 	}
 
 
+	@Override
+	public List<BaiViet> findNew() {
+		String sql = "SELECT * FROM baiviet "
+				+ " LEFT JOIN taikhoan ON baiviet.mataikhoan = taikhoan.mataikhoan"
+				+ " LEFT JOIN chude ON baiviet.machude = chude.machude "
+				+ "Order by ngayDang desc limit 0,4 ";
+		return query(sql, new BaiVietMapper());
+	}
+
+
 	
 
 	

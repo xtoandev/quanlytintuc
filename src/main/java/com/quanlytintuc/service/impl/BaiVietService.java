@@ -1,9 +1,5 @@
 package com.quanlytintuc.service.impl;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -61,6 +57,12 @@ public class BaiVietService implements IBaiVietService {
 	@Override
 	public BaiViet findOne(Long mabaiviet) {
 		return baivietDAO.findOne(mabaiviet);
+	}
+
+	@Override
+	public List<BaiViet> findNew() {
+		
+		return baivietDAO.findNew();
 	}
 
 }
