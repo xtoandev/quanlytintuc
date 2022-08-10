@@ -160,10 +160,10 @@
 														<c:param name="maTaiKhoan" value="${item.maTaiKhoan}"/>
 													</c:url>
                                                     <div class="table-data-feature">
-                                                        <a class="item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Send">
+                                                        <a target="_blank" href="<c:url value='/bai-viet?mabaiviet=${o.maBaiViet}'/>" class="item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Send">
                                                             <i class="fa fa-eye"></i>
                                                         </a>
-                                                        <a href="<c:url value='/admin-baiviet?type=edit&maBaiViet=${o.maBaiViet}'/> " class="item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
+                                                        <a href="<c:url value='/admin-baiviet?type=edit&maBaiViet=${o.maBaiViet}'/>" class="item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit">
                                                             <i class="zmdi zmdi-edit"></i>
                                                         </a>
                                                       

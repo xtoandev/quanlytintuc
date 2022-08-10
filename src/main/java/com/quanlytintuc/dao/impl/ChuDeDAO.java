@@ -15,5 +15,13 @@ public class ChuDeDAO extends AbstractDAO<ChuDe> implements IChuDeDAO{
 		String sql = "Select * From chude";
 		return query(sql, new ChuDeMapper());
 	}
+
+	@Override
+	public ChuDe findOne(Long machude) {
+		String sql = "Select * From chude "
+				+" where chude.machude = ?";
+		List<ChuDe> bvs = query(sql, new ChuDeMapper(),machude);
+		return bvs.isEmpty() ? null : bvs.get(0);
+	}
 	
 }

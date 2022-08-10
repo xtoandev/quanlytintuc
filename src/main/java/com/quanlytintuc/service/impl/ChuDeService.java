@@ -21,6 +21,10 @@ public class ChuDeService implements IChuDeService {
 		// TODO Auto-generated method stub
 		return chudeDAO.findAll();
 	}
+	@Override
+	public ChuDe findOne(Long machude) {
+		return chudeDAO.findOne(machude);
+	}
 	
 	//Java Servlet Wed
 

@@ -6,5 +6,5 @@ import com.quanlytintuc.model.ChuDe;
 
 public interface IChuDeDAO extends GenericDAO<ChuDe> {
 	List<ChuDe> findAll();
-	
+	ChuDe findOne(Long machude);
 }

@@ -6,5 +6,5 @@ import com.quanlytintuc.model.ChuDe;
 
 public interface IChuDeService {
 	List<ChuDe> findAll();
-	
+	ChuDe findOne(Long machude);
 }

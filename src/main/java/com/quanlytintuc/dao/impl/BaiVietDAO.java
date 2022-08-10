@@ -11,8 +11,18 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 
 	@Override
 	public List<BaiViet> findByMaChuDe(Long machude) {
-		String sql = "Select * From baiviet,chitietchude where chitietchude.mabaiviet = baiviet.mabaiviet and  chitietchude.machude = ?";
+		String sql = "SELECT * FROM baiviet "
+				+ " LEFT JOIN taikhoan ON baiviet.mataikhoan = taikhoan.mataikhoan"
+				+ " LEFT JOIN chude ON baiviet.machude = chude.machude "
+				+ " Where baiviet.machude = ?"
+				+ " Order by ngayDang desc limit 0,4 ";
+				
+	
 		return query(sql, new BaiVietMapper(),machude);
+		
+		
+		//String sql = "Select * From baiviet,chitietchude where chitietchude.mabaiviet = baiviet.mabaiviet and  chitietchude.machude = ?";
+		//return query(sql, new BaiVietMapper(),machude);
 	}
 
 	
@@ -151,10 +161,10 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 		String sql = "SELECT * FROM baiviet "
 				+ " LEFT JOIN taikhoan ON baiviet.mataikhoan = taikhoan.mataikhoan"
 				+ " LEFT JOIN chude ON baiviet.machude = chude.machude "
-				+ "Order by ngayDang desc limit 0,4 ";
+				+ "Order by ngayDang desc limit 0,20 ";
 		return query(sql, new BaiVietMapper());
 	}
-
+	
 
 	
 

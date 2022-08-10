@@ -26,6 +26,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="<c:url value = '/template/web/css/style.css'/>" rel="stylesheet">
+    <link href="<c:url value = '/template/web/css/custom.css'/>" rel="stylesheet">
 </head>
 
 <body>

@@ -57,7 +57,9 @@ public class HomeController extends HttpServlet {
 			response.sendRedirect(request.getContextPath()+"/trang-chu");
 		}else {
 			BaiViet model = new BaiViet();
+			Long nb = (long) 1;
 			model.setListData(baivietService.findNew());
+			request.setAttribute("baivietnoibat", baivietService.findByMaChuDe(nb));
 			request.setAttribute("baivietmoi", model);
 			request.setAttribute("dschude",chudeService.findAll());
 			RequestDispatcher rd = request.getRequestDispatcher("views/web/home.jsp");
