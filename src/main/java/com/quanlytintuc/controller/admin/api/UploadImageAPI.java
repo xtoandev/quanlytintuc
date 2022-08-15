@@ -22,7 +22,7 @@ public class UploadImageAPI extends HttpServlet{
 	
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Part file1 = request.getPart("image");
+		
 		
 		
 		

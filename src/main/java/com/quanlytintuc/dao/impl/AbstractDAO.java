@@ -22,9 +22,10 @@ public class AbstractDAO<T> implements GenericDAO<T> {
 	public Connection getConnection() {
 		try {
 			Class.forName(resourceBundle.getString("driverName"));
-			String url = resourceBundle.getString("url");
-			String user = resourceBundle.getString("user");
-			String password = resourceBundle.getString("password");
+			String url = "jdbc:mysql://localhost:3306/quanlytintuc";
+			String user = "root";
+			String password = "";
+			
 			
 			return DriverManager.getConnection(url, user, password);
 		} catch (ClassNotFoundException | SQLException e) {
