@@ -2,7 +2,6 @@ package com.quanlytintuc.controller.admin;
 
 import java.io.IOException;
 
-import javax.inject.Inject;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.quanlytintuc.model.BaiViet;
-import com.quanlytintuc.service.IBaiVietService;
 
 @WebServlet(urlPatterns = {"/admin-trang-chu"})
 public class HomeController extends HttpServlet{
@@ -20,15 +18,14 @@ public class HomeController extends HttpServlet{
 	 * 
 	 */
 
-	@Inject
-	private IBaiVietService baivietService;
+	
 	
 	private static final long serialVersionUID = 1L;
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String tieude = "Bài Viết 6";
-		Long mataikhoan = (long) 2;
+		
 		String mota = "mota66";
 		String noidung = "baivie666";
 		String anhnen = "anh";
@@ -37,7 +34,6 @@ public class HomeController extends HttpServlet{
 				
 		BaiViet bv = new BaiViet();
 		bv.setTieuDe(tieude);
-		bv.setMaTaiKhoan(mataikhoan);
 		bv.setMoTa(mota);
 		bv.setNoiDung(noidung);
 		bv.setAnhNen(anhnen);

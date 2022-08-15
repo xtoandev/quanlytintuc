@@ -25,6 +25,23 @@ public class ChuDeService implements IChuDeService {
 	public ChuDe findOne(Long machude) {
 		return chudeDAO.findOne(machude);
 	}
+	@Override
+	public ChuDe save(ChuDe chude) {
+		Long newID = chudeDAO.save(chude);
+		return chudeDAO.findOne(newID);
+	}
+	@Override
+	public ChuDe update(ChuDe chude) {
+		chudeDAO.update(chude);
+		return chudeDAO.findOne(chude.getMaChuDe());
+	}
+	@Override
+	public void delete(long[] ids) {
+		
+		for(long id : ids) {
+			chudeDAO.delete(id);
+		}
+	}
 	
 	//Java Servlet Wed
 

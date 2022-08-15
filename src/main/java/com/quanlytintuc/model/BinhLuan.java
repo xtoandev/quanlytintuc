@@ -1,22 +1,12 @@
 package com.quanlytintuc.model;
 
-public class BinhLuan {
+public class BinhLuan extends AbstractModel<BinhLuan>{
 	private Long maBinhLuan;
 	private Long maTaiKhoan;
 	private Long maBaiViet;
 	private String noiDung;
 	private String ngayGui;
-	public BinhLuan() {
-		
-	}
-	public BinhLuan(Long maBinhLuan, Long maTaiKhoan, Long maBaiViet, String noiDung, String ngayGui) {
-		
-		this.maBinhLuan = maBinhLuan;
-		this.maTaiKhoan = maTaiKhoan;
-		this.maBaiViet = maBaiViet;
-		this.noiDung = noiDung;
-		this.ngayGui = ngayGui;
-	}
+	TaiKhoan taikhoan = new TaiKhoan();
 	public Long getMaBinhLuan() {
 		return maBinhLuan;
 	}
@@ -47,6 +37,14 @@ public class BinhLuan {
 	public void setNgayGui(String ngayGui) {
 		this.ngayGui = ngayGui;
 	}
+	public TaiKhoan getTaikhoan() {
+		return taikhoan;
+	}
+	public void setTaikhoan(TaiKhoan taikhoan) {
+		this.taikhoan = taikhoan;
+	}	
+	
+	
 	
 	
 }

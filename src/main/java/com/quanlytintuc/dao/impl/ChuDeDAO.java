@@ -23,5 +23,34 @@ public class ChuDeDAO extends AbstractDAO<ChuDe> implements IChuDeDAO{
 		List<ChuDe> bvs = query(sql, new ChuDeMapper(),machude);
 		return bvs.isEmpty() ? null : bvs.get(0);
 	}
+
+	
+	
+
+	@Override
+	public Long save(ChuDe chude) {
+		String sql = "insert into chude(tenchude) " + 
+				"values(?) ";
+		
+		return insert(sql,chude.getMaChuDe());
+	}
+
+	@Override
+	public void update(ChuDe chude) {
+		String sql = "update chude SET "
+				+ " tenchude = ?"
+				+ " WHERE machude = ? ;";
+		update(sql,chude.getTenChuDe(),chude.getMaChuDe());
+		
+	}
+
+	@Override
+	public void delete(long id) {
+		
+		String sql = "DELETE FROM chude WHERE machude = ?";
+		update(sql,id);
+	}
+
+	
 	
 }

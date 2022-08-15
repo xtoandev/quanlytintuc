@@ -2,13 +2,14 @@ package com.quanlytintuc.model;
 
 
 
-public class TaiKhoan {
+public class TaiKhoan extends AbstractModel<TaiKhoan>{
 	private Long maTaiKhoan;
 	private String matKhau;
 	private Long maQuyen;
 	private String hoVaTen;
 	private String ngaySinh;
 	private String email;
+	private String anhNen;
 	private int trangThai;
 	private Quyen quyen = new Quyen();
 	
@@ -66,6 +67,15 @@ public class TaiKhoan {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+	public String getAnhNen() {
+		return anhNen;
+	}
+
+	public void setAnhNen(String anhNen) {
+		this.anhNen = anhNen;
+	}
+
 	public int getTrangThai() {
 		return trangThai;
 	}

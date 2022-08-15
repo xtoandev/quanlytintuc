@@ -1,6 +1,6 @@
 package com.quanlytintuc.model;
 
-public class ChuDe {
+public class ChuDe extends AbstractModel<ChuDe>{
 	private Long maChuDe;
 	private String tenChuDe;
 	

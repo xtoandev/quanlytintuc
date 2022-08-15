@@ -32,6 +32,7 @@ public class BaiVietAPI extends HttpServlet{
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("application/json");
 		BaiViet bv = HttpUtil.of(request.getReader()).toModel(BaiViet.class);
+		System.out.println("123: "+request.getParameter("anhNen"));
 		TaiKhoan taikhoan = (TaiKhoan) SessionUtil.getInstance().getValue(request, "TAIKHOANMODEL");
 		bv.setMaTaiKhoan(taikhoan.getMaTaiKhoan());
 		bv = baivietService.save(bv);

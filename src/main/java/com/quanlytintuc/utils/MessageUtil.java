@@ -1,9 +1,17 @@
 package com.quanlytintuc.utils;
 
+import java.io.UnsupportedEncodingException;
+
 import javax.servlet.http.HttpServletRequest;
 
 public class MessageUtil {
 	public static void showMessage(HttpServletRequest request) {
+		try {
+			request.setCharacterEncoding("UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		if (request.getParameter("message") != null) {
 			String messageResponse = "";
 			String alert = "";
