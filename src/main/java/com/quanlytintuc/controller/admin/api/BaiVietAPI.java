@@ -24,6 +24,8 @@ public class BaiVietAPI extends HttpServlet{
 	 */
 	@Inject
 	private IBaiVietService baivietService;
+	@Inject
+	private UploadImageAPI imageAPI;
 	
 	private static final long serialVersionUID = 1L;
 	
@@ -32,7 +34,7 @@ public class BaiVietAPI extends HttpServlet{
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("application/json");
 		BaiViet bv = HttpUtil.of(request.getReader()).toModel(BaiViet.class);
-		System.out.println("123: "+request.getParameter("anhNen"));
+		//imageAPI.UploadFile(request, response);
 		TaiKhoan taikhoan = (TaiKhoan) SessionUtil.getInstance().getValue(request, "TAIKHOANMODEL");
 		bv.setMaTaiKhoan(taikhoan.getMaTaiKhoan());
 		bv = baivietService.save(bv);

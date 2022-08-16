@@ -191,9 +191,9 @@
 							<label for="textarea-input" class=" form-control-label">Nội
 								dung</label>
 						</div>
-						<div class="col-12 col-md-9">
+						<div class="col-12 col-md-12">
 							<textarea rows="" cols="" id="noiDung" name="noiDung"
-								style="width: 820px; height: 175px" class="form-control">${model.noiDung}</textarea>
+								style="width: 820px; height: 100px;" class="form-control">${model.noiDung}</textarea>
 						</div>
 					</div>
 					<input type="hidden" value="${model.maBaiViet}" id="id"
@@ -217,31 +217,53 @@
 	</div>
 
 	<script>
-	
+	var img ='';
+	var urlimg ='';
 	var editor = '';
 	$(document).ready(function(){
-		editor = CKEDITOR.replace( 'noiDung');
+		editor = CKEDITOR.replace( 'noiDung',{
+			
+		});
 		
 	});
+	
+	
+	
     $('#btnAddOrUpdate').click(function (e) {
         e.preventDefault();
-        var data = {};
-        var formData = $('#formSubmit').serializeArray();
-        $.each(formData, function (i, v) {
-            data[""+v.name+""] = v.value;
-        });
-        var file_data = $('input[name="anhNen"]')[0].files;
-        for (var i = 0; i < file_data.length; i++) {
-            data["anhNen"] =  file_data[i].name;
-            uploadImage(file_data[i]);
-        }
-        data["noiDung"] = editor.getData();
-        var id = $('#id').val();
-        if (id == "") {
-            addBaiViet(data);
-        } else {
-            updateBaiViet(data);
-        }
+     // Logs wL2dvYWwgbW9yZ...
+        form = new FormData();
+        form.append( 'image', img );
+        
+        var settings = {
+        		  "url": "https://api.imgbb.com/1/upload?key=80df0acdc876b7677c1d3d5c7d78b840",
+        		  "method": "POST",
+        		  "timeout": 0,
+        		  "processData": false,
+        		  "mimeType": "multipart/form-data",
+        		  "contentType": false,
+        		  "data": form
+        		};
+        $.ajax(settings).done(function (response) {
+  		  	console.log(response);
+  		  	var jx = JSON.parse(response);
+  		 
+	  		var data = {};
+	        var formData = $('#formSubmit').serializeArray();
+	        $.each(formData, function (i, v) {
+	            data[""+v.name+""] = v.value;
+	        });
+	       
+	        data["anhNen"] = jx.data.url;
+	        data["noiDung"] = editor.getData();
+	        var id = $('#id').val();
+	        if (id == "") {
+	            addBaiViet(data);
+	        } else {
+	            updateBaiViet(data);
+	        }
+				
+	  		});
     });
     function addBaiViet(data) {
         $.ajax({
@@ -273,20 +295,27 @@
             }
         });
     }
-    function uploadImage(data) {
-        $.ajax({
-            url: '${APIUploadImage}',
-            type: 'POST',
-            data: data,
-            contentType: false,
-            processData: false,
-            success: function (result) {
-            	
-            },
-            error: function (error) {
-            	
-            }
-        });
+    function UploadImage(base64String) {
+    	// Logs wL2dvYWwgbW9yZ...
+        form = new FormData();
+        form.append( 'image', base64String );
+        
+        var settings = {
+        		  "url": "https://api.imgbb.com/1/upload?key=80df0acdc876b7677c1d3d5c7d78b840",
+        		  "method": "POST",
+        		  "timeout": 0,
+        		  "processData": false,
+        		  "mimeType": "multipart/form-data",
+        		  "contentType": false,
+        		  "data": form
+        		};
+        $.ajax(settings).done(function (response) {
+  		  console.log(response);
+  		  var jx = JSON.parse(response);
+  		  alert(jx.data.url);
+  		  urlimg = jx.data.url;
+
+  		});
     }
     function readURL(input) {
         if (input.files && input.files[0]) {
@@ -295,10 +324,17 @@
             reader.onload = function (e) {
                 $('#blah')
                     .attr('src', e.target.result);
-            };
+             // Use a regex to remove data url part
+                const base64String = reader.result
+                    .replace('data:', '')
+                    .replace(/^.+,/, '');
 
+                console.log(base64String);
+                img = base64String;
+            };  	
             reader.readAsDataURL(input.files[0]);
         }
+        
     }
 </script>
 

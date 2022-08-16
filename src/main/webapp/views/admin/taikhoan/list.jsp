@@ -79,6 +79,7 @@
 							<th>Họ Và Tên</th>
 							<th>Email</th>
 							<th>Mật Khẩu</th>
+							<th>Ảnh nền</th>
 							<th>Trạng Thái</th>
 							<th>Thao tác</th>
 						</tr>
@@ -101,6 +102,8 @@
 								<td>${o.hoVaTen}</td>
 								<td>${o.email}</td>
 								<td>${o.matKhau}</td>
+								<td><img style="max-height: 100px; max-weight: 100px;"
+									src="<c:url  value='${o.anhNen}'/>"></td>
 
 								<td><c:if test="${o.trangThai == 1}">
 										<span class="status--process">Hoạt động</span>

@@ -27,7 +27,7 @@
 								<div class="info clearfix">
 									<div class="image">
 										<a href="#"> <img
-											src="<c:url value='template/admin/images/icon/${TAIKHOANMODEL.anhNen}'/>"
+											src="<c:url value='${TAIKHOANMODEL.anhNen}'/>"
 											alt="${TAIKHOANMODEL.hoVaTen }" />
 										</a>
 									</div>
