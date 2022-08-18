@@ -16,7 +16,7 @@
 						<div class="account-item clearfix js-item-menu">
 							<div class="image">
 								<img
-									src="<c:url value= 'template/admin/images/icon/${TAIKHOANMODEL.anhNen}'/>"
+									src="<c:url value= '${TAIKHOANMODEL.anhNen}'/>"
 									alt="${TAIKHOANMODEL.hoVaTen }" />
 
 							</div>

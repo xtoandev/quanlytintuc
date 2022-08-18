@@ -34,3 +34,7 @@ a.h4.d-block.mb-3.text-secondary.text-uppercase.font-weight-bold {
 img.img-fluid.h-100 {
 	width: 100%;
 }
+.news-content  img {
+	object-fit: cover;
+	width: 100% !important;
+}

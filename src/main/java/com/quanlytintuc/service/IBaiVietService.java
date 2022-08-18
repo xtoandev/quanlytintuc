@@ -16,4 +16,5 @@ public interface IBaiVietService {
 	void delete(long[] ids);
 	Integer getTotalItems();
 	List<BaiViet> findNew();
+	Integer getTotalComment(Long mabaiviet);
 }

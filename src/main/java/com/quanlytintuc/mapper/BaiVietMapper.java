@@ -30,6 +30,7 @@ public class BaiVietMapper implements RowMapper<BaiViet>{
 			try {
 				taikhoan.setMaTaiKhoan(rs.getLong("mataikhoan"));
 				taikhoan.setHoVaTen(rs.getString("hovaten"));
+				taikhoan.setAnhNen(rs.getString("anh"));
 				bv.setTaikhoan(taikhoan);
 				
 				chude.setMaChuDe(rs.getLong("machude"));

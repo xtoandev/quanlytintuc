@@ -35,10 +35,13 @@
 			</div>
 			<div class="input-group ml-auto d-none d-lg-flex"
 				style="width: 100%; max-width: 300px;">
-				<form action="/tim-kiem">
-					<input type="text" class="form-control border-0"
-						placeholder="Từ khóa">
-					<div class="input-group-append">
+				<form action="/tim-kiem" class="form-row">
+					<div class="form-group">
+	                    <input type="text" class="form-control border-0"
+							placeholder="Từ khóa">
+                    </div>
+					
+					<div class="input-group-append form-group">
 						<button type="submit"
 							class="input-group-text bg-primary text-dark border-0 px-3">
 							<i class="fa fa-search"></i>

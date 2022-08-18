@@ -26,7 +26,7 @@ public class BinhLuanMapper implements RowMapper<BinhLuan>{
 				taikhoan.setMaTaiKhoan(rs.getLong("mataikhoan"));
 				taikhoan.setEmail(rs.getString("email"));
 				taikhoan.setHoVaTen(rs.getString("hovaten"));
-				taikhoan.setAnhNen(rs.getString("anhnen"));
+				taikhoan.setAnhNen(rs.getString("anh"));
 				bl.setTaikhoan(taikhoan);
 			}catch (SQLException e) {
 				System.out.println(e.getMessage());

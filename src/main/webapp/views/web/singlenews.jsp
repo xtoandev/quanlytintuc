@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@include file="/common/taglib.jsp"%>
+<c:url var="APIurl" value="/api-admin-binhluan" />
+<c:url var="NewURL" value="/bai-viet" />
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,8 +18,7 @@
 				<div class="col-lg-8">
 					<!-- News Detail Start -->
 					<div class="position-relative mb-3">
-						<img class="img-fluid w-100"
-							src="<c:url value='${baiviet.anhNen}'/>"
+						<img class="img-fluid w-100" src="<c:url value='${baiviet.anhNen}'/>"
 							style="object-fit: cover; min-height: 400px;">
 						<div class="bg-white border border-top-0 p-4">
 							<div class="mb-3">
@@ -29,20 +30,18 @@
 							<h1 class="mb-3 text-secondary text-uppercase font-weight-bold">${baiviet.tieuDe}</h1>
 							<h6>${ baiviet.moTa }</h6>
 							<div>
-								<p>${ baiviet.noiDung }</p>
+								<div class = "news-content">${ baiviet.noiDung }</div>
 							</div>
 
 						</div>
 						<div
 							class="d-flex justify-content-between bg-white border border-top-0 p-4">
 							<div class="d-flex align-items-center">
-								<img class="rounded-circle mr-2"
-									src="${baiviet.taikhoan.anhNen}" width="25" height="25" alt="">
+								<img class="rounded-circle mr-2" src="${baiviet.taikhoan.anhNen}" width="25" height="25" alt="">
 								<span>${baiviet.taikhoan.hoVaTen}</span>
 							</div>
 							<div class="d-flex align-items-center">
-								<span class="ml-3"><i class="far fa-eye mr-2"></i>12345</span> <span
-									class="ml-3"><i class="far fa-comment mr-2"></i>123</span>
+								<span class="ml-3"><i class="far fa-comment mr-2"></i>${ slbinhluan}</span>
 							</div>
 						</div>
 					</div>
@@ -54,18 +53,30 @@
 							<h4 class="m-0 text-uppercase font-weight-bold">Bình Luận</h4>
 						</div>
 						<div class="bg-white border border-top-0 p-4">
-							<form>
-								<div class="form-row">
-									<div class="form-group col-md-9">
-										<input type="text" class="form-control p-4"
-											placeholder="Nhập nội dung bình luận!" required="required">
+							<c:if test="${ empty TAIKHOANMODEL }">
+								<p>Bạn chưa<a href="<c:url value='/dang-nhap?action=login' />"> đăng nhập!</a></p>
+							</c:if>
+							<c:if test="${not empty TAIKHOANMODEL }">
+								<form id="formSubmit" >
+									<div class="form-row">
+										<div class="form-group col-md-1">
+											<img src="<c:url value='https://i.ibb.co/L50Mcn5/no-ava.png' />" alt="Image"
+												class="img-fluid mr-3 mt-1"
+												style="width: 45px; height: auto;">
+										</div>
+										<div class="form-group col-md-9">
+											<input type="text" class="form-control p-4" name="noiDung"
+												placeholder="Nhập nội dung bình luận!" required="required">
+										</div>
+										<input type="hidden" name="maBaiViet" value="${baiviet.maBaiViet}" required="required">
+										<input type="hidden" id="disabled-input" name="ngayGui" value="${ngayhientai }" required="required">
+										<div class="col-md-2">
+											<button class="btn btn-primary font-weight-semi-bold px-1"
+												style="height: 50px;" type="submit" id="btnAddComment" >Bình luận</button>
+										</div>
 									</div>
-									<div class="col-md-3">
-										<button class="btn btn-primary font-weight-semi-bold px-4"
-											style="height: 50px;" type="submit">Bình luận</button>
-									</div>
-								</div>
-							</form>
+								</form>
+							</c:if>
 						</div>
 						<div class="bg-white border border-top-0 p-4">
 							<c:if test="${not empty commentList }">
@@ -120,6 +131,38 @@
 			</div>
 		</div>
 	</div>
-
+	<script>
+		
+	    $('#btnAddComment').click(function (e) {
+	        e.preventDefault();
+	        var data = {};
+	        var formData = $('#formSubmit').serializeArray();
+	        $.each(formData, function (i, v) {
+	            data[""+v.name+""] = v.value;
+	        });
+	        
+	        
+	        
+	            addChuDe(data);
+	        
+	    });
+	    function addChuDe(data) {
+	        $.ajax({
+	            url: '${APIurl}',
+	            type: 'POST',
+	            contentType: 'application/json',
+	            data: JSON.stringify(data),
+	            dataType: 'json',
+	            success: function (result) {
+	            	window.location.href = "${NewURL}?mabaiviet="+result.maBaiViet;
+	            },
+	            error: function (error) {
+	            	//window.location.href = "${NewURL}?type=list&message=error_system";
+	            	window.location.href = "${NewURL}?mabaiviet="+result.maBaiViet;
+	            }
+	        });
+	    }
+	    
+	</script>
 </body>
 </html>

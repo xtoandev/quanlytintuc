@@ -164,6 +164,13 @@ public class BaiVietDAO extends AbstractDAO<BaiViet> implements IBaiVietDAO{
 				+ "Order by ngayDang desc limit 0,20 ";
 		return query(sql, new BaiVietMapper());
 	}
+
+
+	@Override
+	public Integer getTotalComment(Long mabaiviet) {
+		String sql = "SELECT COUNT(*) FROM binhluan where mabaiviet="+ mabaiviet;
+		return sumRowsData(sql);
+	}
 	
 
 	

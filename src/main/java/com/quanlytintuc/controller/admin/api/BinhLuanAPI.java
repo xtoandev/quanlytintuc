@@ -10,42 +10,34 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.quanlytintuc.model.BaiViet;
+import com.quanlytintuc.model.BinhLuan;
 import com.quanlytintuc.model.TaiKhoan;
-import com.quanlytintuc.service.IBaiVietService;
+import com.quanlytintuc.service.IBinhLuanService;
 import com.quanlytintuc.utils.HttpUtil;
 import com.quanlytintuc.utils.SessionUtil;
-
-@WebServlet(urlPatterns = {"/api-admin-baiviet"})
-public class BaiVietAPI extends HttpServlet{
-
-	/**
-	 * 
-	 */
-	@Inject
-	private IBaiVietService baivietService;
-	
+@WebServlet(urlPatterns = {"/api-admin-binhluan"})
+public class BinhLuanAPI extends HttpServlet{
 	
 	private static final long serialVersionUID = 1L;
+	@Inject
+	private IBinhLuanService binhluanService;
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("application/json");
-		BaiViet bv = HttpUtil.of(request.getReader()).toModel(BaiViet.class);
-		//imageAPI.UploadFile(request, response);
+		BinhLuan tk = HttpUtil.of(request.getReader()).toModel(BinhLuan.class);
 		TaiKhoan taikhoan = (TaiKhoan) SessionUtil.getInstance().getValue(request, "TAIKHOANMODEL");
-		bv.setMaTaiKhoan(taikhoan.getMaTaiKhoan());
-		bv = baivietService.save(bv);
-		mapper.writeValue(response.getOutputStream(), bv);
+		tk.setMaTaiKhoan(taikhoan.getMaTaiKhoan());
+		tk = binhluanService.save(tk);
+		mapper.writeValue(response.getOutputStream(), tk);
 	}
-	
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ObjectMapper mapper = new ObjectMapper();
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("application/json");
-		BaiViet bvUpdate = HttpUtil.of(request.getReader()).toModel(BaiViet.class);
-		bvUpdate = baivietService.update(bvUpdate);
+		BinhLuan bvUpdate = HttpUtil.of(request.getReader()).toModel(BinhLuan.class);
+		bvUpdate = binhluanService.update(bvUpdate);
 		mapper.writeValue(response.getOutputStream(), bvUpdate);	
 	}
 	
@@ -53,9 +45,8 @@ public class BaiVietAPI extends HttpServlet{
 		ObjectMapper mapper = new ObjectMapper();
 		request.setCharacterEncoding("UTF-8");
 		response.setContentType("application/json");
-		BaiViet bv = HttpUtil.of(request.getReader()).toModel(BaiViet.class);
-		baivietService.delete(bv.getIds());
+		BinhLuan bv = HttpUtil.of(request.getReader()).toModel(BinhLuan.class);
+		binhluanService.delete(bv.getIds());
 		mapper.writeValue(response.getOutputStream(), "{}");	
 	}
-	
 }

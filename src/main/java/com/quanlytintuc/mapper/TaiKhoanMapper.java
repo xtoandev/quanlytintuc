@@ -17,7 +17,7 @@ public class TaiKhoanMapper implements RowMapper<TaiKhoan>{
 			tk.setMatKhau(rs.getString("matkhau"));
 			tk.setMaQuyen(rs.getLong("maquyen"));
 			tk.setHoVaTen(rs.getString("hovaten"));
-			tk.setAnhNen(rs.getString("anhnen"));
+			tk.setAnhNen(rs.getString("anh"));
 			tk.setTrangThai(rs.getInt("trangthai"));
 			Quyen quyen = new Quyen();
 			try {

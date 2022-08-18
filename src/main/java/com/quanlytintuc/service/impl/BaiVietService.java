@@ -65,4 +65,9 @@ public class BaiVietService implements IBaiVietService {
 		return baivietDAO.findNew();
 	}
 
+	@Override
+	public Integer getTotalComment(Long mabaiviet) {
+		return baivietDAO.getTotalComment(mabaiviet);
+	}
+
 }

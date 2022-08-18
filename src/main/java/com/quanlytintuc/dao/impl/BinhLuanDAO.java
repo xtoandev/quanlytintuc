@@ -22,7 +22,10 @@ public class BinhLuanDAO extends AbstractDAO<BinhLuan> implements IBinhLuanDAO{
 	public Long save(BinhLuan binhluan) {
 		String sql = "INSERT INTO binhluan (mataikhoan, mabaiviet, noidung, ngaygui) "
 				+ " VALUES (?, ?, ?, ?)";
-		return insert(sql,binhluan.getMaBinhLuan());
+		return insert(sql,binhluan.getMaTaiKhoan()
+							,binhluan.getMaBaiViet()
+							,binhluan.getNoiDung()
+							,binhluan.getNgayGui());
 	}
 
 	@Override
